@@ -1,6 +1,7 @@
-#+Title: Letranger.github.io
+#+TITLE: Letranger.github.io
 #+AUTHO: Yung Chin, Yeng
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+#+EMAIL: yen.yungchin@gmail.com
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-bigblow.setup
 
 * Python
 ** 基礎教材
