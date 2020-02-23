@@ -4,6 +4,8 @@
 
 * Python研習
 ** 基礎
+- test
+- test
 ** 進階
 * EmacsNote
 - test
