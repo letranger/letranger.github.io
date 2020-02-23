@@ -4,10 +4,11 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-bigblow.setup
 
 * Python
-** 基礎教材
+** Basic Materials
 - test
 - test
-** 進階教材
+** Advanced Materials
+** Learning Resourcesz
 * EmacsNote
 - 
 - https://gitee.com/paulzql/org-html-themes/raw/master/setup/theme-bigblow.setup
