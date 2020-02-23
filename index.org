@@ -1,6 +1,6 @@
 #+Title: Letranger.github.io
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/reveal.js/3.0.0/
-#+SETUPFILE: https://gitee.com/paulzql/org-html-themes/raw/master/setup/theme-bigblow.setup
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 * Python
 ** 基礎教材
