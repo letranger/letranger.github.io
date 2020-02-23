@@ -3,3 +3,8 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
 
 * Python研習
+** 基礎
+** 進階
+* EmacsNote
+- test
+
