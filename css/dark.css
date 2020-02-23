@@ -1,0 +1,37 @@
+    html, code
+    {
+        background: #333 !important;
+        color: #ababab !important;
+    }
+
+    #content, p
+    {
+        max-width: 45em !important;
+        text-align: justify !important;
+    }
+
+    h2
+    {
+        color: rgb(139, 46, 65) !important;
+        text-shadow: .1em .1em .2em #000 !important;
+    }
+
+    h3
+    {
+        color: #a34d32 !important;
+    }
+
+    pre
+    {
+        background: #222 !important;
+        color: #bbb !important;
+        border-width: .25em .12em !important;
+        border-radius: 1em / .75em !important;
+        box-shadow: 0 0 .3em rgba(255, 255, 255, 0.5) !important;
+        border-color: #ababab !important;
+    }
+
+    p, li
+    {
+        color: #999 !important;
+    }

@@ -1,0 +1,3 @@
+[submodule "org-notes-style"]
+	path = org-notes-style
+	url = https://github.com/ptpt/org-notes-style.git
