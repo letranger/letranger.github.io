@@ -5,10 +5,8 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/notes.css"/>
 
 * Python notes
-** Basic Materials
 - [[https://letranger.github.io/PythonCourse/PythonBasic.html][Basic Python programming]]
-* Advanced Materials
-** Learning Resourcesz
+- [[https://letranger.github.io/PythonCourse/PythonAdvanced.html][Advanced Python programming]]
 * Emacs notes
 - [[https://letranger.github.io/Emacs/EmacsNotes.html][Emacs]]
 - [[https://letranger.github.io/Emacs/EmacsOrgMode.html][Emacs Org]]
