@@ -4,9 +4,13 @@
 #+OPTIONS: num:nil toc:3
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/notes.css"/>
 
+* CPP
+- [[https://letranger.github.io/CPP/TNFSHC++.html][C++ for TNFSH]]
 * Python notes
 - [[https://letranger.github.io/PythonCourse/PythonBasic.html][Basic Python programming]]
 - [[https://letranger.github.io/PythonCourse/PythonAdvanced.html][Advanced Python programming]]
+* SWIFT
+- [[https://letranger.github.io/SWIFT/SwiftUI.html][SWiftUI]]
 * Emacs notes
 - [[https://letranger.github.io/Emacs/EmacsNotes.html][Emacs]]
 - [[https://letranger.github.io/Emacs/EmacsOrgMode.html][Emacs Org]]
