@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-10-03 Sat 11:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Learning Resource for James</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Yung Chin, Yen" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.cacheClassElem = elem.className;
+         elem.cacheClassTarget = target.className;
+         target.className = "code-highlighted";
+         elem.className   = "code-highlighted";
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(elem.cacheClassElem)
+         elem.className = elem.cacheClassElem;
+       if(elem.cacheClassTarget)
+         target.className = elem.cacheClassTarget;
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Learning Resource for James</h1>
+
+<div id="outline-container-org4d404b0" class="outline-2">
+<h2 id="org4d404b0">Machine Learning Resource</h2>
+<div class="outline-text-2" id="text-org4d404b0">
+</div>
+<div id="outline-container-org65eaa13" class="outline-3">
+<h3 id="org65eaa13">台大李宏毅</h3>
+<div class="outline-text-3" id="text-org65eaa13">
+<ul class="org-ul">
+<li><a href="http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML19.html">ML19: 台大機器學習課程大綱</a></li>
+<li><a href="https://www.youtube.com/watch?v=CXgbekl66jc">ML Lecture 0-1: Introduction of Machine Learning</a></li>
+<li><a href="https://www.youtube.com/watch?v=On1N8u1z2Ng">ML Lecture 0-2: Why we need to learn machine learning?</a></li>
+<li><a href="https://www.youtube.com/watch?v=fegAeph9UaA">ML Lecture 1: Regression - Case Study</a></li>
+<li><a href="https://www.youtube.com/watch?v=1UqCjFQiiy0">ML Lecture 1: Regression - Demo</a></li>
+<li><a href="https://www.youtube.com/watch?v=D_S6y0Jm6dQ">ML Lecture 2: Where does the error come from?</a></li>
+<li><a href="https://www.youtube.com/watch?v=yKKNr-QKz2Q">ML Lecture 3-1: Gradient Descent</a></li>
+<li><a href="https://www.youtube.com/watch?v=1_HBTJyWgNA">ML Lecture 3-2: Gradient Descent (Demo by AOE)</a></li>
+<li><a href="https://www.youtube.com/watch?v=wzPAInDF_gI">ML Lecture 3-3: Gradient Descent (Demo by Minecraft)</a></li>
+<li><a href="https://www.youtube.com/watch?v=fZAZUYEeIMg">ML Lecture 4: Classification</a></li>
+<li><a href="https://www.youtube.com/watch?v=hSXFuypLukA">ML Lecture 5: Logistic Regression</a></li>
+<li><a href="https://www.youtube.com/watch?v=Dr-WRlEFefw">ML Lecture 6: Brief Introduction of Deep Learning</a></li>
+<li><a href="https://www.youtube.com/watch?v=ibJpTrp5mcE">ML Lecture 7: Backpropagation</a></li>
+<li><a href="https://www.youtube.com/watch?v=gDp2LXGnVLQ&amp;list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&amp;index=3&amp;t=0s">Anomaly Detection (1/7)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4">Next Step of Machine Learning (Hung-yi Lee, NTU, 2019)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Lx3l4lOrquw">ML Lecture 8-1: “Hello world” of deep learning</a></li>
+<li><a href="https://www.youtube.com/watch?v=5BJDJd-dzzg">ML Lecture 8-2: Keras 2.0</a></li>
+<li><a href="https://www.youtube.com/watch?v=L8unuZNpWw8">ML Lecture 8-3: Keras Demo</a></li>
+<li><a href="https://www.youtube.com/watch?v=lnjrn3bF9lA">Explainable ML (1/8)</a></li>
+<li><a href="https://www.youtube.com/watch?v=yORbWn7UsBs">Explainable ML (4/8)</a></li>
+<li><a href="https://www.youtube.com/watch?v=1xnhQbAV1m0">Explainable ML (5/8)</a></li>
+<li><a href="https://www.youtube.com/watch?v=xki61j7z-30">ML Lecture 9-1: Tips for Training DNN</a></li>
+<li><a href="https://www.youtube.com/watch?v=Ky1ku1miDow">ML Lecture 9-2: Keras Demo 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=F1vek6ULo9w">ML Lecture 9-3: Fizz Buzz in Tensorflow (sequel)</a></li>
+<li><a href="https://www.youtube.com/watch?v=FrKWiRv254g">ML Lecture 10: Convolutional Neural Network</a></li>
+<li><a href="https://www.youtube.com/watch?v=XsC9byQkUH8">ML Lecture 11: Why Deep?</a></li>
+<li><a href="https://www.youtube.com/watch?v=fX_guE7JNnY">ML Lecture 12: Semi-supervised</a></li>
+<li><a href="https://www.youtube.com/watch?v=iwh5o_M4BNU">ML Lecture 13: Unsupervised Learning - Linear Methods</a></li>
+<li><a href="https://www.youtube.com/watch?v=X7PH3NuYW0Q">ML Lecture 14: Unsupervised Learning - Word Embedding</a></li>
+<li><a href="https://www.youtube.com/watch?v=GBUEjkpoxXc">ML Lecture 15: Unsupervised Learning - Neighbor Embedding</a></li>
+<li><a href="https://www.youtube.com/watch?v=yyKaACh_j3M&amp;list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&amp;index=45&amp;t=0s">Meta Learning – Metric-based (1/3)</a></li>
+<li><a href="https://www.youtube.com/watch?v=Tk5B4seA-AU">ML Lecture 16: Unsupervised Learning - Auto-encoder</a></li>
+<li><a href="https://www.youtube.com/watch?v=YNUek8ioAJk">ML Lecture 17: Unsupervised Learning - Deep Generative Model (Part I)</a></li>
+<li><a href="https://www.youtube.com/watch?v=8zomhgKrsmQ">ML Lecture 18: Unsupervised Learning - Deep Generative Model (Part II)</a></li>
+<li><a href="https://www.youtube.com/watch?v=6ZWu4L7XOiQ&amp;list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&amp;index=48&amp;t=0s">More about Auto-encoder (1/4)</a></li>
+<li><a href="https://www.youtube.com/watch?v=qD6iD4TFsdQ">ML Lecture 19: Transfer Learning</a></li>
+<li><a href="https://www.youtube.com/watch?v=7qT5P9KJnWo&amp;list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&amp;index=25">Life Long Learning (1/7)</a></li>
+<li><a href="https://www.youtube.com/watch?v=ZjfjPzXw6og&amp;feature=youtu.be">Sequence-to-sequence Learning</a></li>
+<li><a href="https://www.youtube.com/watch?v=EkAqYbpCYAc&amp;list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&amp;index=33&amp;t=0s">Meta Learning – MAML (1/9)</a></li>
+<li><a href="https://www.youtube.com/watch?v=QSEPStBgwRQ">ML Lecture 20: Support Vector Machine (SVM)</a></li>
+<li><a href="https://www.youtube.com/watch?v=xCGidAeyS4M">ML Lecture 21-1: Recurrent Neural Network (Part I)</a></li>
+<li><a href="https://www.youtube.com/watch?v=rTqmWlnwz_0">ML Lecture 21-2: Recurrent Neural Network (Part II)</a></li>
+<li><a href="https://www.youtube.com/watch?v=YIuBHB9Ejok&amp;feature=youtu.be">Unsupervised Syntactic Parsing (ft. 莊永松同學)</a></li>
+<li><a href="https://www.youtube.com/watch?v=tH9FH1DH5n0">ML Lecture 22: Ensemble</a></li>
+<li><a href="https://www.youtube.com/watch?v=W8XF3ME8G2I">ML Lecture 23-1: Deep Reinforcement Learning</a></li>
+<li><a href="https://www.youtube.com/watch?v=y8UPGr36ccI">ML Lecture 23-2: Policy Gradient (Supplementary Explanation)</a></li>
+<li><a href="https://www.youtube.com/watch?v=2-JNBzCq77c">ML Lecture 23-3: Reinforcement Learning (including Q-learning)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLJV_el3uVTsODxQFgzMzPLa16h6B8kWM_">Deep Reinforcement Learning, 2018</a></li>
+<li><a href="https://www.youtube.com/watch?v=dPp8rCAnU_A&amp;list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&amp;index=52&amp;t=0s">Network Compression (1/6)</a></li>
+<li><a href="https://www.youtube.com/watch?v=ufcKFjdpT98&amp;list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&amp;index=58&amp;t=0s">GAN (Quick Review)</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLJV_el3uVTsMq6JEFPW35BCiOQTsoqwNw">Generative Adversarial Network (GAN), 2018</a></li>
+<li><a href="https://www.youtube.com/watch?v=ugWDIIOHtPA&amp;list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&amp;index=58">Transformer</a></li>
+<li><a href="https://www.youtube.com/watch?v=UYPa347-DdE&amp;list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&amp;index=62&amp;t=0s">ELMO, BERT, GPT</a></li>
+<li><a href="https://www.youtube.com/watch?v=uXY18nzdSsM&amp;list=PLJV_el3uVTsOK_ZK5L0Iv_EQoL1JefRL4&amp;index=59">Flow-based Generative Model</a></li>
+<li><a href="https://brohrer.mcknote.com/zh-Hant/statistics/how_bayesian_inference_works.html">貝葉斯推斷的運作原理</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung Chin, Yen</p>
+<p class="date">Created: 2020-10-03 Sat 11:19</p>
+</div>
+</body>
+</html>
