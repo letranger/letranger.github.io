@@ -1,0 +1,119 @@
+#+TITLE: Resilient Cities
+#+OPTIONS: num:3
+#+include: ../web.org
+
+* 目標
+韌性城市(Resilient Cities)一詞的主要概念係指城市經歷天然災害或環境劇烈變遷後，城市能夠快速恢復並維持原本的秩序。由於天災及氣候變遷已成常態，因此如何在本市近年積極推動的智慧城市(Smart City)概念下打造一韌性城市，是本局的重要目標之一。早期韌性城市的研究重點，著重於藉由工程技術的改善來減災(mitigation)，而本專案的重點則將著重於在數位治理(digital governance, or e-governance)的概念下，如何藉由大數據(Big Data)及人工智慧(Artificial Intelligence or AI)來建立一智慧韌性城市。
+* 委託人工智慧發展韌性城市管理規劃
+** 委託人工智慧發展韌性城市管理規劃主題需求
+*** 研究並收集韌性城市個案
+1. 收集相關韌性城市計畫，並探討其與台北市的異同之處。
+1. 整理並撰寫報告以整合各項參考資料。"
+*** 智慧城市數據研究
+1. 分析既有的大數據，探討並規範原則以建立與韌性城市有關之獨立小型資料集(datasets)。
+1. 分析小型資料集的關聯性，並規劃是否可用於建立韌性城市。
+*** 劇烈天氣及氣候變遷相關數值模式分析
+1. 探索相關劇烈天氣及氣候變遷相關數值模式。
+1. 邀請國內外專家針對劇烈天氣與韌性城市之各種數值模式進行會議討論。
+*** 分析運用人工智慧於韌性城市的可能性
+1. 結合相關案例，大數據及各種數值模式，訂定人工智慧應用於建立韌性城市的各項步驟及指標。
+1. 估計可能的軟硬體費用及時程安排，產出報告以利建立本市為智慧韌性城市。政府文件典藏規範與典藏格式之比較分析。
+** 人工智慧發展韌性城市管理規劃方法及要求
+*** 焦點團體及個人訪談
+應與規劃主題相關焦點團體及個人進行訪談，發掘與探究相關問題，焦點團體及個人包括下列對象，惟對象本機關得視業務需要進行調整：
+1. 本機關首長、主管或其指定代表。
+1. 本機關指定單位主管或其指定代表。
+1. 本機關指定之中央機關主管或其指定代表。
+1. 本機關指定之產業人士或府外專家學者。"
+*** 案例分析
+應至少收集國內10個，國外10個與主題相關案例資料或文獻，分析其現況與發展經驗作法，探討關鍵成功因素、可參考或可修正之處，與機關目前發展及策略進行比較，以利提出未來具體可行之建議方案。
+* 韌性城市之規劃方向
+大至看了一下里約的經驗[fn:2]，我覺得你在寫之前可以先針對這幾項主題先和台北市府確認一下1~4的正確答案(網路上是可以查到零散相關訊息，但是有些是民間團體或學術研究意見，市府也不一定認同)，然後針對這些方向提出你的韌性行動願景以及具體方案
+1. 確認台北城市發展課題
+2. 台北市預期的自然環境挑戰
+3. 台北市衍生性的社會衝擊
+4. 台北市未來願景
+5. 提出韌性行動回應
+* 資料蒐集
+** 概念文獻:
+*** 韌性城市[fn:1]
+**** 什麼是韌性城市
+韌性城市是指一城市擁有足以容納、維持現今及未來社會、經濟、環境、科技發展所帶來的壓力，基礎建設規劃能在未來仍能發揮必要的功能。同時，城市必須將針對氣候變遷危機議題做規劃，並增進在基礎建設及自然環境層面的調適能力。
+**** 韌性城市的提出和發展:
+美國辛辛那提大學Crhis Christopher Auffrey教授指出，對於韌性城市的理解，不應僅僅停留在防災減災方面，更應關註城市的健康持續發展、居民的幸福生活品質。因而，韌性城市還應包含一些關於市民日常生活的要素，例如，市民是否能接近活動場所，是否能接近好的醫療和教育設施以及是否能接觸到有機健康食品等。
+
+在城市規劃實踐中，很多領域的工作與韌性城市相關，除了傳統觀念中的城市防災，還有城市安全與預警、應對經濟危機和人口老齡化、應對交通污染和環境變化等。
+
+一座韌性城市是一個由物質系統和人類社區組成的可持續網路。物質系統是城市中的自然和人造環境要素，包括建成的道路、建築、基礎設施、通信和能源以及水系、土壤、地形、地質和其他自然系統。在災害中，物質系統必須能夠在極端的壓力下保存，並繼續發揮作用。如果物質系統大部分都經受了不能修複的損傷，城市的損失就會加劇且恢復緩慢。一座沒有韌性物質系統的城市在面對災害時將極度脆弱。
+
+Crhis Christopher Auffrey強調，韌性城市的研究應該從多學科、多維度、多尺度的交叉視角出發，借鑒國際經驗進行全面探討，並儘快將研究成果轉化到城市規劃和建設實踐中去。
+**** 韌性城市的內涵
+- 經濟韌性：具有應對外部經濟動蕩的能力，以多元經濟結構為新的發展目標。以Smart Development（新知識驅動的發展），Sustainable（可持續性）、Inclusive（包容性）；
+- 社會韌性：應對社會變化的能力，社區歸屬感，通過社會整合實現自我振興的能力；
+- 生態環境韌性： 具有應對外部自然災害的能力，城市空間及城市基礎設施規劃留有餘地，災害來臨後能夠自我承受、消化、調整、適應、實現再造和複蘇。
+**** 全球100韌性城市
+*全球100韌性城市*是由美國洛克菲勒基金會於2013年5月份提出的一項城市發展項目，旨在通過為城市制定和實施韌性計劃及提供技術支持與資源，幫助世界各地城市增加韌性，應對21世紀日益頻發的自然、社會、經濟挑戰。這些挑戰並不僅限於地震、洪澇、突發疫情等衝擊，還包括動搖城市體系的日復一日或迴圈往複的壓力，如失業率居高不下等。
+*** 韌性城市重要特質[fn:3]
+**** 韌性城市的發展是積分賽，而非淘汰賽
+韌性城市應該被看作是一個動態的過程，一個城市的韌性需要時間的累積，一兩個舉世無雙，神之作品的好設計也許對推動都市韌性有幫助，卻不會是全部。韌性同時也是多元的，需要大家共同的參與與努力。以都市洪水的議題為例，韌性的推動可以表現在公共工程如滯洪公園，排水設施等，但若沒有市民共同對水議題的關注，對自身環境的準備與危機意識，發展一個都市的韌性就會相當困難。
+**** 韌性的發展仰賴經驗與學習
+韌性城市的發展與學習力高度相關。『學習』，除了從自身過去發生的經驗中吸取養分(learning from previous experiences)，也可以由科學評估，及城市間相互比較，經驗分享所得(learning from knowledge exchanges)。這也說明了為何各城市積極參與國際性的城市聯盟，如C402，ICELI3等，藉由經驗交換與資源共享，來推動更為韌性的都市發展 。要注意的是，這裡的學習，並非完全複製他地的操作經驗，而應考慮地方特性(如環境特性，文化背景，空間治理架構，發展願景)，將他地的經驗消化學習，進而轉換為符合當地需求的策略與規範，完全的複製不僅無法確保城市變得更韌性，更可能是一場災難。
+**** 減緩與調適同樣重要
+對面氣候變遷的不確定性，城市的減緩 (mitigation)與調適 (adaptation)行動，都是關鍵。目前台灣多半將韌性看作是調適的代名詞，這種理解方式雖然簡單，卻侷限了韌性的討論與應用。由於減緩與調適在出發點與考量面向的差異，所擬定的具體作法可能會有矛盾或衝突之處(可能會打架)。一般而言，減緩策略比較偏向是中央層級的工作範疇，而調適行動則比較容易在地方層級，甚或社區層級上實現。無論如何，持續的協調溝通，梳理各面建議並轉換成大家都相對滿意(並符合長期發展願景)的空間策略，會是韌性城市推動過程中最關鍵的一環 – 這也是空間規劃的核心價值。
+
+** 100 Resilient cities
+- [[https://eyesonplace.net/2018/12/10/9521/][韌性成事好城市：從100 Resilient cities談城市發展的韌性]]: 在國際上，韌性城市發展的重點和脈絡是什麼呢？以下就從非營利組織『一百韌性城市(100 Resilient cities, 以下簡稱100RC) 1』來一窺其內涵。...
+- [[https://www.rockefellerfoundation.org/100-resilient-cities/][100 Resilient Cities]]: In 2013, The Rockefeller Foundation pioneered 100 Resilient Cities to help more cities build resilience to the physical, social, and economic challenges that are a growing part of the 21st century. ... ()
+
+** resilientcitiesnetwork.org
+- [[https://resilientcitiesnetwork.org/network/][resilientcitiesnetwork.org]]
+- [[https://resilientcitiesnetwork.org/urban_resiliences/100-resilient-cities-midterm-evaluation-report-summary/][100 Resilient Cities Midterm Evaluation Report – Summary]]
+
+** 韌性城市策略與做法
+- [[https://www.rde.ntpc.gov.tw/userfiles/1160700/files/10.pdf][從都市規劃思維來看韌性城市]]
+- [[https://www.delta-foundation.org.tw/blogdetail/3021][韌性城市大比拚 最佳做法報你知]]
+- [[https://eyesonplace.net/2016/06/20/2614/][韌性，城市不任性IV: 韌性城市在台灣 – 與變化共生，與知識共存]]
+- [[https://www.seinsights.asia/specialfeature/5065][社企流年度專題《打造韌性城市》：城市看病記 ]](看裡面的SlideShare)
+- [[https://udn.com/news/story/6928/4424142][台北大學團隊整合模型 提災害對策打造韌性城市]]
+- [[https://www.ncdr.nat.gov.tw/Areas/Frontend/Content/NCDR_Template/file/2020/%E6%A5%B5%E7%AB%AF%E7%81%BD%E5%AE%B3%E4%B8%8B%E4%B9%8B%E9%9F%8C%E6%80%A7%E5%9F%8E%E5%B8%82.pdf][極端災害下之韌性城市]]
+- [[https://www.oecd.org/naec/averting-systemic-collapse/SG-NAEC(2019)5_Resilience_strategies.pdf][RESILIENCE STRATEGIES AND APPROACHES TO CONTAIN SYSTEMIC THREATS]]
+- [[http://uli.org/wp-content/uploads/ULI-Documents/Resilience-Strategies-for-Communities-at-Risk.pdf][Resilience Strategies for Communities at Risk]]
+- [[https://nziwr.co.nz/wp-content/uploads/2020/03/NZIWR_Real-time_Resilience_Coping_with_Coronavirus.pdf][Real-time Resilience Strategies for Coping with Coronavirus]]
+- [[https://ap.buffalo.edu/content/dam/ap/PDFs/NYSERDA/Climate-Resilience-Strategies-for-Buildings.pdf][Climate Resilience Strategies for Buildings in New York State]]
+- [[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjz2ZLWnoHtAhViFqYKHTX-DS4QFjAIegQIBhAC&url=https%3A%2F%2Fwww.mdpi.com%2F2071-1050%2F11%2F17%2F4727%2Fpdf&usg=AOvVaw1xSpfuD86Rd9U8pcjjQ-eF][Guide for Climate-Resilient Cities: An Urban CriticalInfrastructures Approach]]
+- [[https://www.storm.mg/article/1512514][連興隆專欄：韌性城市的「去中心化」思維]]
+** 韌性城市架構(City resilient framework)
+- 健康與福利(Health & Wellbeing)
+- 經濟與社會(Economy & Society，
+- 基礎建設與環境(Infrastructure & Environment)，
+- 領導與策略(Leadership & Strategy)
+** 案例分析
+*** 國內
+**** 嘉義縣東石鄉
+- [[https://eyesonplace.net/2016/05/11/2201/][韌性，城市不任性 II : 理論發展與空間規劃上的應用]]
+**** 高雄市
+- [[https://www.storm.mg/article/1512514][連興隆專欄：韌性城市的「去中心化」思維]]
+*** 國外
+**** 荷蘭鹿特丹
+- [[https://eyesonplace.net/2018/12/10/9521/][韌性成事好城市：從100 Resilient cities談城市發展的韌性]]
+- [[https://eyesonplace.net/2016/04/13/1697/][韌性，城市不任性 I : 規劃專業的新思維，從荷蘭經驗談起]]
+- [[https://eyesonplace.net/2016/06/06/2580/][韌性，城市不任性III : 鹿特丹．從水岸開發到韌性城市]]
+- [[https://www.rde.ntpc.gov.tw/userfiles/1160700/files/10.pdf][從都市規劃思維來看韌性城市]]
+**** 里約
+- [[https://eyesonplace.net/2018/12/12/9554/][韌性成事好城市@里約（Rio de Janeiro, Brazil）：擁抱我們的水，為我們的未來建設，並賦權與人民]]
+**** 威靈頓
+- [[https://eyesonplace.net/2018/12/19/9738/][韌性成事好城市@威靈頓(Wellington)：傳統，社會與自然的共生]]
+**** 波士頓
+- [[https://eyesonplace.net/2018/12/28/10053/][韌性成事好城市@波士頓(Boston, US)：追求一個族群共融、連貫、公平的城市]]
+**** 舊金山
+- [[https://eyesonplace.net/2018/12/31/10103/][韌性成事好城市@舊金山(San Francisco, US) 明日，更強壯的城市]]
+**** New York
+- [[https://ap.buffalo.edu/content/dam/ap/PDFs/NYSERDA/Climate-Resilience-Strategies-for-Buildings.pdf][Climate Resilience Strategies for Buildings in New York State]]
+
+* Footnotes
+
+[fn:3] [[https://eyesonplace.net/2016/05/11/2201/][韌性，城市不任性 II : 理論發展與空間規劃上的應用]]
+
+[fn:2] [[https://eyesonplace.net/2018/12/12/9554/][韌性成事好城市@里約（Rio de Janeiro, Brazil）：擁抱我們的水，為我們的未來建設，並賦權與人民]]
+
+[fn:1] [[https://wiki.mbalib.com/zh-tw/%E9%9F%A7%E6%80%A7%E5%9F%8E%E5%B8%82][韌性城市]]
