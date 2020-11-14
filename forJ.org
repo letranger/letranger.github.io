@@ -1,7 +1,13 @@
-#+TITLE: 租房留意事項
+#+TITLE: 幫女兒準備的租房留意事項
 
 #+INCLUDE: ../web.org
 
+#+ATTR_LATEX: :width 400
+#+ATTR_HTML: :width 400
+#+ATTR_ORG: :width 400
+#+RESULTS:
+[[file:images/jane.jpg
+]]
 * 選擇適合房子
 請依自己的需求找要是《公寓、電梯大樓、透天、家庭式、宿舍式》
 再來選擇雅房或是套房
