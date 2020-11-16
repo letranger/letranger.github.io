@@ -77,6 +77,44 @@ Crhis Christopher Auffrey強調，韌性城市的研究應該從多學科、多�
 - 基礎建設與環境(Infrastructure & Environment)，
 - 領導與策略(Leadership & Strategy)
 
+** 30項都市保護區實踐準則
+1. 在都市保護區內對所有民眾提供通行權，與接觸少數族群與弱勢團體的機會；
+1. 讓民眾產生地方所有權的感覺；
+1. 善用志工與支持團體的優勢；
+1. 與不同對象進行溝通；
+1. 展示、促進與推廣良好的環境行為；
+1. 展示、促進與推廣接觸大自然對於健康的益處，以及良好的飲食習慣；
+1. 防止亂丟垃圾；
+1. 犯罪預防與起訴；
+1. 減少人與野生動物的互動與衝突；
+1. 控制盜獵；
+1. 控制動植物入侵外來種；
+1. 促進都市保護區與其他自然域的連結；
+1. 幫助自然融入人造環境，並打破「自然」與「都市」之間的文化藩籬；
+1. 管控非法建物；
+1. 監測並管理水資源；
+1. 管控野火；
+1. 減少噪音與人造光害的衝擊，並且持續關注電磁波的研究；
+1. 與共享管轄權或鄰近範圍的政府機關合；
+1. 與具備附帶任務的機關（如縣市政府、保育警察、林務機關等）進行合作；
+1. 網羅支持者與盟友；
+1. 與大學合作，進行都市保護區管理人員的培訓；促使大學利用都市保護區進行學術研究與深度學習；
+1. 學習他人的合作經驗；
+1. 推廣與維護都市保區；
+1. 讓都市保護區成為國家與全球自然保育的優先項目；
+1. 創造與拓展都市保護區；
+1. 推廣尊重都市保護區與偏遠地是有差異的組織文化；
+1. 瞭解政治技巧是成功的關鍵，增強它們並建立政治資本；
+1. 從各式樣的來源中尋找資金；
+1. 從國際組織與交流計畫中學習優點；
+1. 透過研究改善都市保護區。
+
+* AI for the resilient city
+- [[https://www.evergreen.ca/our-projects/ai-for-the-resilient-city/][AI for the Resilient City ]]
+- [[https://www.ait.ac.at/fileadmin/mc/energy/downloads/News_and_Events/2018-2019/2018_02_Urban_Future/Smart_Resilient_Cities_Web-Brochure_DS.pdf][smart resilient city]]
+- [[https://www.emergency-live.com/civil-protection/urban-resilience-resilient-cities-plug-in-to-technology-for-response-and-recovery/][Urban Resilience - Resilient Cities Plug In to Technology for Response and Recovery]]  
+- [[https://www.iisd.org/system/files/publications/big-data-resilience-storybook.pdf][Big Data for esiliet city storybook]]
+  
 * 韌性城市策略與做法
 - [[https://www.rde.ntpc.gov.tw/userfiles/1160700/files/10.pdf][從都市規劃思維來看韌性城市]]
 - [[https://www.delta-foundation.org.tw/blogdetail/3021][韌性城市大比拚 最佳做法報你知]]
@@ -90,13 +128,50 @@ Crhis Christopher Auffrey強調，韌性城市的研究應該從多學科、多�
 - [[https://ap.buffalo.edu/content/dam/ap/PDFs/NYSERDA/Climate-Resilience-Strategies-for-Buildings.pdf][Climate Resilience Strategies for Buildings in New York State]]
 - [[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjz2ZLWnoHtAhViFqYKHTX-DS4QFjAIegQIBhAC&url=https%3A%2F%2Fwww.mdpi.com%2F2071-1050%2F11%2F17%2F4727%2Fpdf&usg=AOvVaw1xSpfuD86Rd9U8pcjjQ-eF][Guide for Climate-Resilient Cities: An Urban CriticalInfrastructures Approach]]
 - [[https://www.storm.mg/article/1512514][連興隆專欄：韌性城市的「去中心化」思維]]
-
+- [[https://e-info.org.tw/node/111217][極端氣候下的環境治理：為什麼我們需要景觀法]]
+- [[https://e-info.org.tw/node/107906][宜居城市如何判斷？ 5都1縣齊論生物多樣性保育]]
+- [[https://e-info.org.tw/node/104660][極端氣候衝擊 落實韌性城鄉首重社群力]]
+- [[https://e-info.org.tw/node/103499][「韌性」計畫迎戰氣候變遷 全球港灣城市大串連 ]]
+- [[https://e-info.org.tw/node/102872][氣候變遷新挑戰 紐國學者：傳統防洪思維行不通]]
+- [[https://e-info.org.tw/node/89906][從「不能淹水」到「不怕水淹」：換掉治水這帖無效藥吧！]]
+- [[https://e-info.org.tw/node/78362][台灣走出去，「我們」不缺席]]
+- [[https://e-info.org.tw/node/73844][聯合國專家：只有永續發展能創造「韌性」的地球]]
+- [[https://e-info.org.tw/node/68861][【城市韌性專題】 胡志明市的氣候調適計畫(上)]]  
+- [[https://e-info.org.tw/node/68862][【城市韌性專題】胡志明市的氣候調適計畫(下)]]
+- [[https://e-info.org.tw/node/67983][城市低碳外交 五都表現最優]]
+- [[https://e-info.org.tw/node/67866][【城市韌性專題】全球「地方生物多樣性行動」 高雄成為第51個加盟城市]]
+- [[https://e-info.org.tw/node/67778][【城市韌性專題】全球市長發表波昂宣言 強調氣候調適應融入政策]]
+- [[https://e-info.org.tw/node/67777][【城市韌性專題】城市做氣候調適 資金調度須由下而上]]
+- [[https://e-info.org.tw/node/225195][重點不只有裝App 專家解讀台灣防災觀念：政府不能怕告訴民眾]]
+- [[https://e-info.org.tw/node/226128][洪患衝擊中國經濟 專家：製造業納入氣候韌性刻不容緩]]
+- [[https://e-info.org.tw/node/224840][你加Q了嗎？氣象專家教你這樣用APP 不被突如其來的大雨淋成落湯雞]]
+- [[https://e-info.org.tw/node/224795][從打119通報到智慧防汛 水利署全台「淹水感測器」整合上線 資料首次對外公開]]
+- [[https://e-info.org.tw/node/224441][全台蓄水率下降 卓榮泰提醒勤洗手也要節約用水]]
+- [[https://e-info.org.tw/node/217734][出席高雄治水論壇 李鴻源：打造韌性城市要「為失敗而設計」]]
+- [[https://e-info.org.tw/node/202582][廖桂賢：為什麼社子島開發計劃引發質疑？]]
+- [[https://e-info.org.tw/node/17632][廖桂賢：規劃一個生態、正義的社子島未來]]
+- [[https://e-info.org.tw/node/115010][空間翻轉×社區動員：共享之春]]
+- [[https://e-info.org.tw/node/112221][都市保護區貢獻多 定期健診國際有準則]]
+- [[http://www.visionfuture.org.tw/blog-inner.aspx?num=38][【韌性城市】韌性新思維：台灣未來藍圖]]
+- [[https://www.ntpu.edu.tw/admin/a3/people3_more.php?id=312][怎樣才能成為「不怕水淹」的韌性城市？]]
+  
 * 案例分析
 ** 國內
 *** 嘉義縣東石鄉
 - [[https://eyesonplace.net/2016/05/11/2201/][韌性，城市不任性 II : 理論發展與空間規劃上的應用]]
 *** 高雄市
 - [[https://www.storm.mg/article/1512514][連興隆專欄：韌性城市的「去中心化」思維]]
+- [[https://e-info.org.tw/node/67866][【城市韌性專題】全球「地方生物多樣性行動」 高雄成為第51個加盟城市]]
+*** 台北
+- [[https://e-info.org.tw/node/107906][宜居城市如何判斷？ 5都1縣齊論生物多樣性保育]]
+*** 新北
+- [[https://e-info.org.tw/node/107906][宜居城市如何判斷？ 5都1縣齊論生物多樣性保育]]
+*** 台南
+- [[https://e-info.org.tw/node/107906][宜居城市如何判斷？ 5都1縣齊論生物多樣性保育]]
+*** 屏東
+- [[https://e-info.org.tw/node/107906][宜居城市如何判斷？ 5都1縣齊論生物多樣性保育]]
+*** 台中
+- [[https://e-info.org.tw/node/107906][宜居城市如何判斷？ 5都1縣齊論生物多樣性保育]]
 ** 國外
 *** 荷蘭鹿特丹
 - [[https://eyesonplace.net/2018/12/10/9521/][韌性成事好城市：從100 Resilient cities談城市發展的韌性]]
@@ -113,6 +188,24 @@ Crhis Christopher Auffrey強調，韌性城市的研究應該從多學科、多�
 - [[https://eyesonplace.net/2018/12/31/10103/][韌性成事好城市@舊金山(San Francisco, US) 明日，更強壯的城市]]
 *** New York
 - [[https://ap.buffalo.edu/content/dam/ap/PDFs/NYSERDA/Climate-Resilience-Strategies-for-Buildings.pdf][Climate Resilience Strategies for Buildings in New York State]]
+*** 德國
+- [[https://e-info.org.tw/node/103499][「韌性」計畫迎戰氣候變遷 全球港灣城市大串連 ]]
+*** 澳洲
+- [[https://e-info.org.tw/node/103499][「韌性」計畫迎戰氣候變遷 全球港灣城市大串連 ]]
+*** 胡志明市
+- [[https://e-info.org.tw/node/68861][【城市韌性專題】 胡志明市的氣候調適計畫(上)]]  
+- [[https://e-info.org.tw/node/68862][【城市韌性專題】胡志明市的氣候調適計畫(下)]]
+* 參.專案服務規劃
+** 委託人工智慧發展韌性城市管理規劃
+*** 對各規劃主題目標之認知。
+*** 各規劃主題之規劃方法及步驟設計。
+**** 鳳險的提前評估
+**** 災害中的處理
+- 民間災情回報
+**** 災害後的重建
+*** 各規劃主題之預期成果及實務應用。
+* 肆、創意或優規
+*** 廠商所提供之「創意」內容，以與採購標的有關者為限。
 
 * Footnotes
 
