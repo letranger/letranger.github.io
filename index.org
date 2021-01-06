@@ -23,3 +23,4 @@
 * Publication
 - [[https://scholar.google.com/citations?user=K8yP4_IAAAAJ&hl=en][Google Scholar]]
 - [[https://www.youtube.com/user/xletranger/videos][YouTube Videos]]
+- https://letranger.github.io/Letranger/JamesNegotiation.html
