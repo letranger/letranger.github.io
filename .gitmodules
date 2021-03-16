@@ -1,3 +1,6 @@
 [submodule "org-notes-style"]
 	path = org-notes-style
 	url = https://github.com/ptpt/org-notes-style.git
+[submodule "org-html-theme-list"]
+	path = org-html-theme-list
+	url = https://github.com/rgb-24bit/org-html-theme-list.git
