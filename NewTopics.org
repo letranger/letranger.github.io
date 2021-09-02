@@ -288,26 +288,9 @@ Digital twin, 數位雙生，又被譯為「數位雙胞胎」、「數位模擬
    - 2017年，AlphaGo在中國烏鎮圍棋峰會，挑戰排名世界第一的圍棋冠軍柯潔，以3比0獲勝。
    - iPhone X 配備前置3D 感應攝像頭 (TrueDepth)，臉部識別點達到3萬個，具備人臉識別、解鎖和支付等功能；配備的A11 Bionic神經引擎使用雙核設計，每秒可達到運算6千億次。
 
+** 人工智慧的類型
 
 
-** AI 發展的起落
-*** 第一波(符號還輯)：把人類的知識與思考放入電腦
-- 1956 年，John McCarthy
-- 1957 年，Herbert A. Somin(諾貝爾經濟學奬得主)預言電腦能在十年內敗人類(西洋棋)，此預言於 1997由[[https://zh.wikipedia.org/zh-tw/%E6%B7%B1%E8%97%8D_(%E8%B6%85%E7%B4%9A%E9%9B%BB%E8%85%A6)][IBM Deep]]實現。
-- 這階段的失敗原因：連人類自己都還搞不清楚自己的思考過程
-*** 第二波(專家系統)：讓電腦按照人類定義的規則做決策
-- 1970 年，專家系統，一連串條件判斷的推導
-- 第一波失敗原因：野心太大，這次讓電腦依照人類設定好的規則來思考
-- expert system 在 1980 年代廣受應用，Fortune 500 大公司有三分之二將之應用於營運工作中，如訂單處理、信用卡徵審、稅務處理。
-- 1990 年後 expoert system 逐漸勢微，原因是能力有限，距離人類心目中的人工智慧差距尚大。
-- Polanyi's Paradox(博藍尼悖論): We can know more than we cantell, i.e., many of the tasks we perform rely on tacit, intuitive knowledge that is diffucult to codify and automate.
-*** 第三波(機器學習)：電腦從資枓歸納規則，關鍵要素為資料與演算法
-- 2006 年：Geofffrey Hinton 提出 Restricted Boltzmann Machine，成功訓練多層神經網路(multi-layer neural networks)，可用來描述更複雜的非線性函數，並稱之為深度學習(Deep Learning)。
-- 2012 年 10 月,Hinton 帶兩個學生參力 ILSVRC 比賽，以深度學習配合 GPU 的運算速度拿下冠軍。
-- ILSVRC: ImageNet Large Scale Visual Recongnition Challenge, 先讓程式看 120 萬張訓練照片，共 1000 種分類，接下來要求程式為 15 萬張測試照片進行分類。
-- 2013 年，Google 收購 Hinton 和他兩位學生創立的公司：DNNresearch
-- 2015 年，Microsoft 在 ILSVRC 以 3.5%的錯誤率奪冠，首次超過人類(5%)。
-以上參考: [[https://www.books.com.tw/products/0010821934][人工智慧在台灣]]
 
 ** Deep Learning 的概念於 2006 年提出，何以至 2012 年才得到有效應用？
 *** 計算速度: GPU 的計算能力由 2018 年起才有突破性的成長[fn:1]
