@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-10-04 Mon 11:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Smart Cities</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="YEN" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.cacheClassElem = elem.className;
+         elem.cacheClassTarget = target.className;
+         target.className = "code-highlighted";
+         elem.className   = "code-highlighted";
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(elem.cacheClassElem)
+         elem.className = elem.cacheClassElem;
+       if(elem.cacheClassTarget)
+         target.className = elem.cacheClassTarget;
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Smart Cities</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org26a48f2">1. 智慧城市</a></li>
+<li><a href="#org51a1c25">2. 智慧城市數據來源</a>
+<ul>
+<li><a href="#org9b15ff6">2.1. 智慧城市評估指標</a></li>
+<li><a href="#org79fba16">2.2. 目前智慧城市之實務應用</a></li>
+<li><a href="#org6886ea6">2.3. 小結</a></li>
+</ul>
+</li>
+<li><a href="#org5780239">3. 智慧城市之數據分析案例</a></li>
+<li><a href="#org6092130">4. 智慧城市之資訊安全與個人隱私</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org26a48f2" class="outline-2">
+<h2 id="org26a48f2"><span class="section-number-2">1</span> 智慧城市</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+智慧城市(Smart City)的概念，較為具體及具有共識的內容最早於2008年由IBM首席執行長彭明盛所提出，2010年，IBM收集了許多資訊反饋，正式提出了「智慧城市」，希望以資通領導者的角色，積極為國家政策提供專家意見、辦理新的通訊及數位技術的推廣者。IBM經過長期的研究觀察，城市的主要功能由六個核心系統組成：人、行政事務整合、交通、通訊、天然能源。這些核心並不是獨立的存在，而是作為彼此互相關聯的運作生態。而城市本身，便是以此為基礎建構的龐大資訊系統<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>。<br />
+</p>
+
+<p>
+所謂的「智慧」就是透過新一代的資訊科技，例如物聯網 (IoT)、雲端運算、移動互聯網、智慧型終端等，應用到城市中的電力系統、自來水系統、交通系統、建築物和油氣管道、工廠、辦公室及居家生活等生產或生活系統的各種物件中，將我們的感知與所有的設備系統能形成經濟、有效的互動，讓人們可以有更好的工作效率及生活品質。利用ICT技術強化公共市政服務，不僅可以提升政府效能，更可以讓民眾享有更美好的生活品質，因而各國政府都將建設智慧城市視為提升城市競爭力的重要指標<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>。<br />
+</p>
+
+<p>
+依據2018年聯合國的報告，預估2050年全球將有多達2/3人口居住在城市裡，高密度聚攏的人潮將為城市機能帶來嚴苛考驗，不論是金融消費、教育娛樂、交通運輸、醫療照護、建築建設，甚至市政服務、城市安防、能源管理等等，都可能因量變而推動質變，所幸隨著人工智慧 (AI) 與物聯網的技術發展，硬體設備中都可以裝載可連網的晶片，透過資訊即時傳遞和處理，整合應用創造智慧加值服務，有助於減緩人口擁擠所帶來的危機，實現智慧城市的科技與便利<sup><a id="fnr.2.100" class="footref" href="#fn.2">2</a></sup>。<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org51a1c25" class="outline-2">
+<h2 id="org51a1c25"><span class="section-number-2">2</span> 智慧城市數據來源</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+人類的智慧來自知識與思考；城市的智慧來自於數據與分析。而智慧城市需要哪些方面的數據做為進一步分析、預測、輔助行政決策的依據？以下由智慧城市之評估指標以及實務應用兩面向加以探討。<br />
+</p>
+</div>
+
+<div id="outline-container-org9b15ff6" class="outline-3">
+<h3 id="org9b15ff6"><span class="section-number-3">2.1</span> 智慧城市評估指標</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+智慧城市評估指標不僅為城市智慧化程度的判斷依據，其評估面向也代表評估機構對於城市智慧化應涵蓋範圍與發展趨勢的判斷，以下為兩個較具代表性的評估指標：<br />
+</p>
+<ol class="org-ol">
+<li><p>
+智慧城市輪(Smart City Wheel)<br />
+</p>
+
+<p>
+國際知名城市策略師和智慧城市權威布特高漢(Boyd Cohen5) 參考各項主要指數和排名，於 2012 年提出「智慧城市輪」(Smart City Wheel，如圖<a href="#orgee145d2">1</a>)，列出智慧城市的特徵、功能和目標，涵蓋「智慧經濟」(Smart Economy)、「智慧環境」(Smart Environment)、「智慧市民」(Smart People)、「智慧流動」(Smart Mobility)、「智慧生活」 (Smart Living)和「智慧政府」(Smart Government)等六大範疇 18 個分領域，並以此為基礎，聯同其它研究和推動智慧城市的代表人士，共同制定 62 項具體評核指標，並於 2013 年公布全球智慧城市排名，前三名分別為韓國首爾、新加坡和日本東京<sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>。<br />
+</p>
+
+
+<div id="orgee145d2" class="figure">
+<p><img src="images/202108261154497343158943.jpg" alt="202108261154497343158943.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 1: </span>Caption</p>
+</div>
+
+<p>
+以此六大核心面向又分別包含三個子項目<sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup>：<br />
+</p>
+<ol class="org-ol">
+<li>智慧環境（Smart Environment）<br />
+<ul class="org-ul">
+<li>智慧建築<br /></li>
+<li>智慧能源及資源管理<br /></li>
+<li>都市規劃<br /></li>
+</ul></li>
+<li>智慧交通（Smart Mobility）<br />
+<ul class="org-ul">
+<li>多元的智慧交通方式<br /></li>
+<li>乾淨、永續能源的綠色交通<br /></li>
+<li>智慧交通大數據應用<br /></li>
+</ul></li>
+<li>智慧生活（Smart Living）<br />
+<ul class="org-ul">
+<li>健康、醫療與衛生<br /></li>
+<li>社會安全<br /></li>
+<li>文化與幸福感<br /></li>
+</ul></li>
+<li>智慧市民（Smart People）<br />
+<ul class="org-ul">
+<li>智慧教育<br /></li>
+<li>種族多樣性、包容性、公共事務參與率<br /></li>
+<li>市民創造力<br /></li>
+</ul></li>
+<li>智慧政府（Smart Government）<br />
+<ul class="org-ul">
+<li>數位便民服務<br /></li>
+<li>數位基礎設施普及程度<br /></li>
+<li>公開資料及數位政府透明度<br /></li>
+</ul></li>
+<li>智慧經濟（Smart Economy）<br />
+<ul class="org-ul">
+<li>創新與機會<br /></li>
+<li>產業生產力<br /></li>
+<li>在地與國際的連結度<br /></li>
+</ul></li>
+</ol>
+
+<p>
+Boyd Cohen也強調，科技高度發展的城市並非就能成為智慧城市，因為打造智慧城市不僅僅只在硬體建置、ICT 或技術整合等硬實力，同樣也著重於管理途徑、規劃設計、創新包容、主觀幸福感、社群力量等軟實力的開發，且目標應該是要提升城市生活品質，讓城市發展越來越好<sup><a id="fnr.5" class="footref" href="#fn.5">5</a></sup>。<br />
+</p></li>
+
+<li><p>
+2020智慧城市指數(Smart City Index 2020)<br />
+</p>
+
+<p>
+瑞士洛桑管理學院（International Institute for Management Development, IMD）於2020年9月18日發布2020智慧城市指數報告（Smart City Index 2020）。該報告為IMD和新加坡科技設計大學（Singapore University of Technology and Design, SUTD）共同出版，該報告評比109個城市，前5名智慧城市分別為：新加坡、赫爾辛基（芬蘭）、蘇黎世（瑞士）、奧克蘭（紐西蘭）、奧斯陸（挪威）。其他重要城市排名包括紐約第10、倫敦第15、香港第32、首爾第47、巴黎第61、東京第79、上海第81名等<sup><a id="fnr.6" class="footref" href="#fn.6">6</a></sup>。<br />
+</p>
+
+<p>
+報告中智慧城市五大評比關鍵標準分別為：健康與安全（health and safety）、運輸及交通（mobility）、城市活動（activities）、機會（opportunities）和政府治理（governance）。每個標準又可區分為「結構面」（Structures）和「科技面」（Technologies）各20個細項評比，前者包含如城市基礎衛生、空氣汙染、醫療設備充足程度、交通擁塞度、綠地空間、文化活動、就業率以及居民和政府機關的互動度等；而後者則包含免費公共WIFI普及度、電子設施使用便利度（例如以空氣汙染偵測、安排醫療活動、文化活動線上購票和共享乘車以減少交通擁塞等）、大眾運輸動態資訊及其他電子化服務等<sup><a id="fnr.6.100" class="footref" href="#fn.6">6</a></sup>。<br />
+</p></li>
+</ol>
+
+<p>
+綜合以上評估指標內涵，智慧城市的評估標準大致應包涵以下幾個面向：<br />
+</p>
+<ol class="org-ol">
+<li>交通運輸<br /></li>
+<li>健康醫療<br /></li>
+<li>能源管理<br /></li>
+<li>污染管控<br /></li>
+<li>文化教育<br /></li>
+<li>市民參與<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org79fba16" class="outline-3">
+<h3 id="org79fba16"><span class="section-number-3">2.2</span> 目前智慧城市之實務應用</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+檢視前述各智慧城市評估指標，可發現其服務涵蓋範圍十分廣泛，要能即時蒐集分析如此龐大的數據，城市除了要俱備快速的5G網路、涵蓋完整的基地台、高效的運算能力、以及量身打造的人工智慧應用程式，更重要的是物聯網(Internet of Things, IoT)技術的支援，所有智慧城市所需數據幾乎全仰賴IoT進行蒐集。可以說，IoT是實現智慧城市最重要的礎，而智慧城市則是IoT最典型的應用場域。<br />
+</p>
+
+<p>
+知名市場研究機構IoT Analytics於2020年9月1日發布「2020年智慧城市的使用案例與技術報告」(Smart City Use Cases &amp; Technology Report 2020)，該份報告針對倫敦、北京、柏林、巴塞隆納和杜拜等31個世界知名的智慧城市所採行的應用案例以及50個智慧城市關鍵決策者所提出的措施進行研究。而IoT Analytics進一步以上述報告為基礎，進一步對智慧城市應用案例進行分析。該份報告結果指出全球頂尖智慧城市的前十項IoT實際應用案分別為：<br />
+</p>
+<ol class="org-ol">
+<li>公共運輸連網(Connected public transport)<br /></li>
+<li>交通狀態監管(traffic monitoring and management)<br /></li>
+<li>水文狀態監控(Water level / Flood monitoring)<br /></li>
+<li>視訊監控與分析(Video surveillance &amp; analytics)<br /></li>
+<li>連網路燈(Connected Streetlights)<br /></li>
+<li>氣候監測(Weather Monitoring)<br /></li>
+<li>空氣品質/汙染監測(Air Quality / pollution monitoring)<br /></li>
+<li>智慧水/電錶(Smart Metering - Water)<br /></li>
+<li>火災偵測(Fire / Smaoke Detection)<br /></li>
+<li>水質監控(Water Quality Monitoring)<br /></li>
+</ol>
+
+
+<div id="org7cb9cb0" class="figure">
+<p><img src="images/messageImage_1632418731309.jpg" alt="messageImage_1632418731309.jpg" width="500" /><br />
+</p>
+<p><span class="figure-number">Figure 2: </span>50個智慧城市中採用物聯網相關措施分布(百分比)</p>
+</div>
+
+<p>
+其中，「公共運輸連網」(Connected public transport)是智慧城市中應用物聯網技術最多的案例類型，占整體應用比例74%，其主要應用內容包含：大眾運輸交通工具位置和路徑的即時顯示、最佳路徑、交通狀態(如：交通訊號、是否塞車等)以及客製化旅遊與新聞訊息整合(如圖<a href="#org7cb9cb0">2</a>)。這些解決方案使人們在擁擠的城市中的移動問題能獲得效率上的提升，此外便捷與訊息透明，使大眾交通的重要性提升<sup><a id="fnr.7" class="footref" href="#fn.7">7</a></sup>。<br />
+</p>
+
+<p>
+占比在公共運輸連網之後，同時居於次位者是占比皆為72%的「交通狀態監管」(Traffic Monitoring and Management)、「水文狀態監控」(Water level / Flood Monitoring)以及「視訊監控與分析」(Video Surv eillance &amp; Analytics)。隨著城市人口的成長，導致越來越多的汽車同時在擁擠的道路上行駛，交通狀態監管變得越來越重要。而水文狀態監控主要在解決公共水域，例如：河流、河道甚至湖泊和海洋中的水位、潮汐等水文狀況；該解決方案在城市人口密集的地區或是農村地區(如：災防)，應用也都很重要<sup><a id="fnr.7.100" class="footref" href="#fn.7">7</a></sup>。<br />
+</p>
+
+<p>
+在視訊監控與分析方面，藉由智慧鏡頭和分析工具來檢測特定情況，例如：事故、犯罪、潛在威脅或識別特定特徵(面部識別、人口統計等)；這類解決方案在人多而又無充足人力即時監看所有訊息的城市地區特別有用。依據IoT Analytics的分析，位居第5名的應用則是「連網路燈」(Connected Streetlights) 占比為68%，其應用主要在監控和管理路燈的設施狀態(例如：能源消耗)，可幫助城市降低公共設施成本並增加設備適用壽命或公共安全性；除連網路燈外占比同為68%者尚有「氣象觀測」與「空氣品質偵測」等應用，都為城市居民帶來生活上的便利，協助居民應對環境的局部變化<sup><a id="fnr.7.100" class="footref" href="#fn.7">7</a></sup>。<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6886ea6" class="outline-3">
+<h3 id="org6886ea6"><span class="section-number-3">2.3</span> 小結</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+綜合上述評估指標與實務應用案例的分析，本研究認為智慧城市所應蒐集分析之數據至少應涵蓋以下幾個面向：<br />
+BALABALA&#x2026;.<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5780239" class="outline-2">
+<h2 id="org5780239"><span class="section-number-2">3</span> 智慧城市之數據分析案例</h2>
+</div>
+
+<div id="outline-container-org6092130" class="outline-2">
+<h2 id="org6092130"><span class="section-number-2">4</span> 智慧城市之資訊安全與個人隱私</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+傳統上，城市提供各種各樣的服務，這些服務很大程度上是相互獨立的(例如：水、電、污水處理、交通、公共工程、法律、消防以及社會服務)。這當中每一項服務過去皆由供應商自己的系統、流程與資產所提供，而現在這些服務正透過互聯的數位技術慢慢地整合和連接成為一個網路。當城市獲得擴展新服務與增加效率的機會，也同時不斷增加的整合、互連與數據交換所產生的共享漏洞，其中一個區域內的問題可能迅速級擴散到其他區域，導致廣泛且災難性的故障。以至於城市需要重新思考監管需求、合理化各安全協議，並且解決資料所有權與使用權之挑戰<sup><a id="fnr.8" class="footref" href="#fn.8">8</a></sup>。<br />
+</p>
+
+<p>
+於此同時，智慧城市的運作基礎在於蒐集、分析大量的城市數據並即時做出因應措施，而這些來自於市民的數據是否會因濫用而侵害到公民的隱私權?<br />
+</p>
+
+<ul class="org-ul">
+<li>如Covid-19確診個案足跡資訊、或是etag記錄行車足跡&#x2026;. BALABALA&#x2026;.<br /></li>
+<li>去識別化?&#x2026;. BALABALA&#x2026;.<br /></li>
+</ul>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://www.2cm.com.tw/2cm/zh-tw/tech/5ADB0E588BBC4DCFAD47DF372E6843ED">資通訊技術整合IoT大數據　智慧城市應用落地六都</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://www.narlabs.org.tw/xcscience/cont?xsmsid=0I148638629329404252&amp;sid=0J098497915837716796">Smart City 2.0：「智慧物聯網」引領「智慧城市」再升級</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwj1uvrwoqbzAhVEL6YKHW7qCioQFnoECAcQAQ&amp;url=https%3A%2F%2Fwww.pico.gov.hk%2Fdoc%2Ftc%2Fresearch_reports%2FCPU%2520research%2520report%2520-%2520Smart%2520City(tc).pdf&amp;usg=AOvVaw36ZhhBUtg6DPz1hBSKQ6uf">智慧城市研究報告</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4">4</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://futurecity.cw.com.tw/article/1983">智慧城市是什麼？22縣市案例、六大應用範圍一次看</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5">5</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;ved=2ahUKEwj1uvrwoqbzAhVEL6YKHW7qCioQFnoECBIQAQ&amp;url=https%3A%2F%2Fwww.rde.ntpc.gov.tw%2Fuserfiles%2Fntpc%2Ffiles%2F20.pdf&amp;usg=AOvVaw1WSLzgflg3olzoY3jD_VoG">國外智慧城市個案研究-以亞洲城市為例</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6">6</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://stli.iii.org.tw/article-detail.aspx?no=64&amp;tp=1&amp;d=8538">瑞士洛桑管理學院發布2020智慧城市指數報告</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7">7</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://findit.org.tw/researchPageV2.aspx?pageId=1560">誰是智慧城市的受益者？從居民到友善國際</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.8" class="footnum" href="#fnr.8">8</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://www2.deloitte.com/tw/tc/pages/risk/articles/smart-city-iot-risk.html">確保智慧城市之數位科技安全－在萬物聯網時代如何面對風險</a><br />
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: YEN</p>
+<p class="date">Created: 2021-10-04 Mon 11:54</p>
+</div>
+</body>
+</html>
