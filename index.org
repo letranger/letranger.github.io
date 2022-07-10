@@ -1,9 +1,9 @@
 #+TITLE: Letranger.github.io
 #+AUTHO: Yung Chin, Yeng
 #+EMAIL: yen.yungchin@gmail.com
-#+OPTIONS: toc:2 ^:nil num:nil
+#+OPTIONS: toc:0 ^:nil num:nil
 #+PROPERTY: header-args :eval never-export
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/white.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/white.css" />
 
 * CPP
 - [[https://letranger.github.io/CPP/TNFSHC++.html][C++ for TNFSH]]
@@ -17,13 +17,8 @@
 * Emacs notes
 - [[https://letranger.github.io/Emacs/EmacsNotes.html][Emacs]]
 - [[https://letranger.github.io/Emacs/EmacsOrgMode.html][Emacs Org]]
-* Ressilient City
-- [[https://letranger.github.io/ResilientCities.html][專案]]
-- [[https://letranger.github.io/ResilientCitiesReview.html][城市案例分析]]
 * GitHub notes
 - [[https://medium.com/%E9%80%B2%E6%93%8A%E7%9A%84-git-git-git/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-%E7%94%A8github-pages-%E4%B8%8A%E5%82%B3%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-fa2ae83e6276][從零開始: 用github pages 上傳靜態網站]]
-* Bookmark
-- [[https://letranger.github.io/Letranger/bookmarks.html][List]]
 * Publication
 - [[https://scholar.google.com/citations?user=K8yP4_IAAAAJ&hl=en][Google Scholar]]
 - [[https://www.youtube.com/user/xletranger/videos][YouTube Videos]]
