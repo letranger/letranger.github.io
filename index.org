@@ -1,8 +1,9 @@
 #+TITLE: Letranger.github.io
 #+AUTHO: Yung Chin, Yeng
 #+EMAIL: yen.yungchin@gmail.com
-#+OPTIONS: num:nil toc:3
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/notes.css"/>
+#+OPTIONS: toc:2 ^:nil num:nil
+#+PROPERTY: header-args :eval never-export
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/white.css" />
 
 * CPP
 - [[https://letranger.github.io/CPP/TNFSHC++.html][C++ for TNFSH]]

@@ -2,6 +2,7 @@
 #+AUTHOR: YEN
 #+OPTIONS: date:nil
 #+OPTIONS: \n:t
+#+OPTIONS: toc:5
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 #+INCLUDE: ../pdf.org
 
