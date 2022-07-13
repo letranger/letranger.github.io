@@ -7,9 +7,12 @@
 
 * CPP
 - [[https://letranger.github.io/CPP/TNFSHC++.html][C++ for TNFSH]]
+- [[https://letranger.github.io/CPP/AdvanceC++.org][Advanced C++ Programming]]
 * Python notes
 - [[https://letranger.github.io/PythonCourse/PythonBasic.html][Basic Python programming]]
 - [[https://letranger.github.io/PythonCourse/PythonAdvanced.html][Advanced Python programming]]
+* AI
+- [[https://letranger.github.io/AI-course/index.html][AI for TNFSH: 從入門到入土]]
 * SWIFT
 - [[https://letranger.github.io/SWIFT/Swift-Intro.html][Swift Introduction]]
 - [[https://letranger.github.io/SWIFT/SwiftUI.html][SWiftUI]]
