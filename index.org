@@ -3,25 +3,41 @@
 #+EMAIL: yen.yungchin@gmail.com
 #+OPTIONS: toc:0 ^:nil num:nil
 #+PROPERTY: header-args :eval never-export
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/white.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/index.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/index.html.svg"/></a>
+#+end_export
+
+* AI
+- [[https://letranger.github.io/AI/][AI Notes: from Zero to Error]]
+- [[https://letranger.github.io/AI-course/index.html][AI for TNFSH: 從入門到入土]]
+
+* Python notes
+- [[https://letranger.github.io/PythonCourse/PythonBasic.html][Python基本教材]]
+- [[file:PythonAdvanced.org][Python進階教材]]
+- [[file:Numpy.org][Numpy]]
+- [[file:Matplotlib.org][Matplotlib]]
+- [[file:Pandas.org][Pandas]]
+- [[file:Crawler.org][Crawler: 網路資料解析與爬蟲]]
+- [[file:gui.org][GUI:Python的人機界面]]
 
 * CPP
-- [[https://letranger.github.io/CPP/TNFSHC++.html][C++ for TNFSH]]
-- [[https://letranger.github.io/CPP/AdvanceC++.org][Advanced C++ Programming]]
-* Python notes
-- [[https://letranger.github.io/PythonCourse/PythonBasic.html][Basic Python programming]]
-- [[https://letranger.github.io/PythonCourse/PythonAdvanced.html][Advanced Python programming]]
-* AI
-- [[https://letranger.github.io/AI-course/index.html][AI for TNFSH: 從入門到入土]]
+- [[https://letranger.github.io/CPP/BasicCPP.html][C++ for TNFSH]]
+- [[https://letranger.github.io/CPP/AdvanceC++.html][Advanced C++ Programming]]
+
+* GitHub notes
+- [[https://medium.com/%E9%80%B2%E6%93%8A%E7%9A%84-git-git-git/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-%E7%94%A8github-pages-%E4%B8%8A%E5%82%B3%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-fa2ae83e6276][從零開始: 用github pages 上傳靜態網站]]
+
+* Emacs notes
+- [[https://letranger.github.io/Emacs/EmacsNotes.html][Emacs]]
+- [[https://letranger.github.io/Emacs/EmacsOrgMode.html][Emacs Org]]
+
 * SWIFT
 - [[https://letranger.github.io/SWIFT/Swift-Intro.html][Swift Introduction]]
 - [[https://letranger.github.io/SWIFT/SwiftUI.html][SWiftUI]]
 - [[https://letranger.github.io/SWIFT/MVVM.html][MVVM]]
-* Emacs notes
-- [[https://letranger.github.io/Emacs/EmacsNotes.html][Emacs]]
-- [[https://letranger.github.io/Emacs/EmacsOrgMode.html][Emacs Org]]
-* GitHub notes
-- [[https://medium.com/%E9%80%B2%E6%93%8A%E7%9A%84-git-git-git/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-%E7%94%A8github-pages-%E4%B8%8A%E5%82%B3%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-fa2ae83e6276][從零開始: 用github pages 上傳靜態網站]]
-* Publication
+
+* Publication, Speech
 - [[https://scholar.google.com/citations?user=K8yP4_IAAAAJ&hl=en][Google Scholar]]
 - [[https://www.youtube.com/user/xletranger/videos][YouTube Videos]]
+- [[https://letranger.github.io/working/][研習、工作坊]]
