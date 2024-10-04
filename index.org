@@ -3,7 +3,7 @@
 #+EMAIL: yen.yungchin@gmail.com
 #+OPTIONS: toc:0 ^:nil num:nil
 #+PROPERTY: header-args :eval never-export
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/muse.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="muse.css" />
 #+begin_export html
 <a href="https://hits.sh/letranger.github.io/index.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/index.html.svg"/></a>
 #+end_export
