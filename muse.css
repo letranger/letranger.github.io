@@ -1,10 +1,15 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+
 body {
    margin: auto;
    /* width: 650px; */
    width: 90%;
    /*font: 16px Verdana, Arial, Helvetica, sans-serif;*/
-
-   font-family: "Roboto Mono", monospace;
+   font: 16px Verdana, Arial, Helvetica, sans-serif;
+   /*font-family: "Roboto Mono", monospace;*/
+   /*font-family: "Noto Sans", "Noto Sans TC", "Helvetica", "Microsoft JhengHei", sans-serif;*/
+   font-family: 'Noto Serif TC', serif;
    font-size: 1em;
    font-weight: light;
    background: #fff /*url("images/bg0.png")*/;
@@ -30,8 +35,8 @@ H1{
    /* padding: top right buttom left */
    padding: 10px 10px 10px 10px;
    /*font-family: georgia, "Trebuchet MS";*/
-   font-family: "Roboto Mono", monospace;
 
+   font-family: 'cwTeXFangSong', serif;
    FONT-WEIGHT: bolder;
    COLOR: #004f37;
    /*Border-bottom: #004f37 2px solid;
@@ -50,8 +55,7 @@ H2 {
   COLOR: #f63811;
   COLOR: #c61a02; */
   COLOR: #005a9c;
-  font-family: georgia, "Trebuchet MS";
-  font-family: "Roboto Mono", monospace;
+  font-family: ‘cwTeXFangSong’, serif;
   FONT-WEIGHT: BOLD;
   font-size: 24px;
 /*  BORDER-BOTTOM: #005a9c 1px solid;*/
@@ -63,6 +67,9 @@ H2 {
   line-height: 2;
   /*background-image: url(../images/lightblue.gif); */
   background-image: url(../images/tuzki-dub.gif);
+  color: #2b804c; /* 主文字顏色 */
+  background: #fff0d6 url(../css/camus.png) no-repeat left center; /* 背景色+圖片 */
+  background-size: 50px 34px;
 
   background-size: 32px 32px;
   background-repeat: no-repeat;
