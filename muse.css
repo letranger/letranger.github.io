@@ -70,11 +70,9 @@ H2 {
   color: #2b804c; /* 主文字顏色 */
   background: #fff0d6 url(../css/camus.png) no-repeat left center; /* 背景色+圖片 */
   background-size: 50px 34px;
-
-  background-size: 32px 32px;
   background-repeat: no-repeat;
   background-position: left;
-  text-indent: 24px;
+  text-indent: 50px;
 }
 }
 
