@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>媽子長照機構預選方案</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  :root{--ink:#1f2937;--muted:#6b7280;--line:#e5e7eb;--bg:#f8fafc;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.6;}
+  header{background:linear-gradient(135deg,#0f766e,#0d9488);color:#fff;padding:22px 20px;}
+  header h1{margin:0 0 4px;font-size:20px;}
+  header p{margin:0;font-size:14px;opacity:.92;}
+  .wrap{max-width:1100px;margin:0 auto;padding:18px 16px 60px;}
+  #map{height:62vh;min-height:420px;width:100%;border-radius:14px;box-shadow:0 4px 18px rgba(0,0,0,.10);z-index:0;}
+  .legend{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px;}
+  .chip{display:flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);
+        border-radius:999px;padding:5px 12px;font-size:13px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+  .dot{width:13px;height:13px;border-radius:50%;flex:0 0 auto;}
+  .pin{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;
+       border-radius:50%;color:#fff;font-weight:700;font-size:13px;box-shadow:0 1px 4px rgba(0,0,0,.3);}
+  h2{font-size:17px;margin:26px 0 12px;border-left:4px solid #0d9488;padding-left:10px;}
+  .tablecard{background:#fff;border-radius:14px;box-shadow:0 4px 18px rgba(0,0,0,.08);overflow:hidden;}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;}
+  thead th{background:#0f766e;color:#fff;font-weight:600;white-space:nowrap;position:sticky;top:0;}
+  tbody tr:nth-child(even){background:#f9fafb;}
+  .name{font-weight:600;}
+  .num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;
+       color:#fff;font-size:12px;font-weight:700;margin-right:6px;}
+  .badge{display:inline-block;padding:2px 9px;border-radius:6px;font-size:12px;font-weight:600;}
+  .ok{background:#dcfce7;color:#166534;}
+  .bad{background:#fee2e2;color:#b91c1c;}
+  .dist{font-weight:700;color:#0f766e;white-space:nowrap;}
+  .scroll{overflow-x:auto;}
+  .note{background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:12px;
+        padding:12px 14px;margin-top:16px;font-size:13.5px;}
+  a.gm{color:#0d9488;text-decoration:none;font-size:12.5px;white-space:nowrap;}
+  a.gm:hover{text-decoration:underline;}
+  .small{color:var(--muted);font-size:12px;}
+  .leaflet-tooltip.lbl{background:rgba(255,255,255,.92);border:1px solid #cbd5e1;font-weight:700;
+        font-size:12px;border-radius:6px;padding:2px 7px;color:#0f172a;box-shadow:0 1px 3px rgba(0,0,0,.2);}
+</style>
+</head>
+<body>
+<header>
+  <h1>媽子長照機構預選方案</h1>
+  <p>中心點（家）：高雄市鳳山區武慶二路（住家）　｜　行車距離與時間由 OSRM 道路路網計算，括號內為實地手寫車程</p>
+</header>
+<div class="wrap">
+  <div id="map"></div>
+  <div class="legend" id="legend">
+    <span class="chip"><span class="dot" style="background:#111827"></span>家（中心點）</span>
+  </div>
+
+  <h2>機構比較表</h2>
+  <div class="tablecard"><div class="scroll">
+  <table>
+    <thead><tr>
+      <th>機構</th><th>服務類型</th><th>地址</th><th>電話</th><th>負責人</th>
+      <th>核定收托</th><th>設立日期</th><th>評鑑</th><th>行車距離</th><th>導航</th>
+    </tr></thead>
+    <tbody id="tbody"></tbody>
+  </table>
+  </div></div>
+
+  <div class="note">
+    ⚠️ <b>瓊瑤</b>（序號60）距離最近、同在生活圈，但一覽表上的近期評鑑結果為 <b>「不合格」</b>，
+    選擇前建議先電話確認改善情形。其餘三間（鳳新、紫軒、鳳翔）評鑑皆為「合格」。
+    <br><span class="small">資料來源：高雄市社區式（日間照顧、小規模多機能）服務類長期照顧服務機構一覽表（統計至115/06/05）。座標為路段近似值，距離供參考。</span>
+  </div>
+</div>
+
+<script>
+const DATA = {"home": {"lat": 22.6112849, "lon": 120.3338954, "addr": "高雄市鳳山區武慶二路"}, "inst": [{"key": "鳳新", "seq": 7, "lat": 22.6205, "lon": 120.3455, "color": "#2563eb", "name": "高雄市私立鳳新社區（日間照顧）長照機構", "type": "失能、失智 ‧ 日間照顧", "addr": "鳳山區南京路391巷5號1、2樓", "tel": "0955-999614", "boss": "吳明福", "cap": "24人", "est": "110.03.08", "eval": "合格", "min": "6分鐘", "dist": 2.4, "dur": 6, "geom": [[120.333895, 22.611285], [120.332998, 22.611223], [120.332943, 22.611215], [120.332933, 22.611348], [120.332927, 22.61143], [120.332924, 22.611461], [120.332891, 22.611722], [120.332841, 22.612125], [120.332747, 22.612297], [120.332736, 22.612396], [120.332655, 22.613119], [120.332555, 22.613825], [120.332481, 22.614343], [120.332319, 22.615786], [120.332305, 22.615909], [120.332376, 22.615917], [120.332914, 22.615974], [120.333923, 22.616093], [120.334432, 22.616152], [120.334481, 22.616158], [120.334789, 22.616193], [120.335714, 22.616303], [120.336717, 22.616415], [120.337991, 22.616574], [120.338156, 22.616595], [120.33869, 22.616648], [120.338775, 22.616656], [120.34118, 22.616903], [120.342497, 22.617057], [120.343297, 22.617149], [120.343703, 22.617198], [120.344076, 22.617242], [120.344473, 22.617288], [120.344886, 22.617337], [120.345434, 22.617401], [120.345529, 22.617412], [120.345595, 22.61742], [120.345674, 22.617433], [120.345755, 22.617441], [120.345752, 22.617512], [120.34575, 22.617545], [120.345712, 22.617933], [120.345666, 22.618342], [120.345606, 22.618805], [120.34543, 22.620484], [120.34543, 22.6205]]}, {"key": "瓊瑤", "seq": 60, "lat": 22.6227895, "lon": 120.3283685, "color": "#dc2626", "name": "三信高職附設私立瓊瑤社區長照機構", "type": "失能、失智 ‧ 日間照顧", "addr": "苓雅區三多一路186號", "tel": "(07)713-3237", "boss": "張美瑛", "cap": "60人", "est": "112.07.12", "eval": "不合格", "min": "6分鐘", "dist": 1.8, "dur": 5, "geom": [[120.333895, 22.611285], [120.332998, 22.611223], [120.332943, 22.611215], [120.332933, 22.611348], [120.332927, 22.61143], [120.332924, 22.611461], [120.332891, 22.611722], [120.332841, 22.612125], [120.332747, 22.612297], [120.332736, 22.612396], [120.332655, 22.613119], [120.332555, 22.613825], [120.332481, 22.614343], [120.332319, 22.615786], [120.332305, 22.615909], [120.332296, 22.615979], [120.332215, 22.616586], [120.332041, 22.617888], [120.332036, 22.61792], [120.332003, 22.61818], [120.331993, 22.618272], [120.33199, 22.6183], [120.331902, 22.619063], [120.331873, 22.619315], [120.331866, 22.619376], [120.331826, 22.619371], [120.330663, 22.619227], [120.330632, 22.619495], [120.330605, 22.619727], [120.330577, 22.61993], [120.330569, 22.619994], [120.330552, 22.620145], [120.330537, 22.620276], [120.330527, 22.620356], [120.330501, 22.620578], [120.330474, 22.620815], [120.330454, 22.620988], [120.33044, 22.621075], [120.330406, 22.62128], [120.33034, 22.621423], [120.330279, 22.621585], [120.330254, 22.621662], [120.330133, 22.621906], [120.330019, 22.622217], [120.329987, 22.622302], [120.329902, 22.622275], [120.329775, 22.622235], [120.329707, 22.622212], [120.329676, 22.622288], [120.329579, 22.622527], [120.329477, 22.622776], [120.329376, 22.623023], [120.329198, 22.623457], [120.32899, 22.62396], [120.328031, 22.623632]]}, {"key": "紫軒", "seq": 9, "lat": 22.615, "lon": 120.3458, "color": "#16a34a", "name": "紫軒醫療資訊附設私立紫軒社區（日間照顧）長照機構", "type": "失能、失智 ‧ 日間照顧", "addr": "鳳山區海洋里南京一路226巷1號1樓", "tel": "(07)763-2138", "boss": "謝孟勳", "cap": "48人", "est": "111.04.26", "eval": "合格", "min": "7分鐘", "dist": 1.8, "dur": 5, "geom": [[120.333895, 22.611285], [120.332998, 22.611223], [120.332943, 22.611215], [120.332933, 22.611348], [120.332927, 22.61143], [120.332924, 22.611461], [120.332891, 22.611722], [120.332841, 22.612125], [120.332747, 22.612297], [120.332914, 22.612311], [120.333187, 22.612333], [120.333374, 22.612348], [120.333584, 22.612365], [120.333959, 22.612396], [120.334946, 22.612476], [120.335327, 22.612507], [120.337203, 22.612659], [120.338607, 22.612763], [120.339359, 22.612782], [120.340136, 22.612804], [120.340198, 22.612805], [120.340574, 22.612816], [120.341404, 22.612839], [120.342455, 22.612895], [120.343188, 22.61293], [120.343448, 22.612943], [120.344244, 22.612993], [120.344776, 22.613057], [120.344849, 22.613064], [120.345321, 22.613084], [120.345434, 22.613088], [120.345514, 22.613092], [120.345601, 22.613094], [120.345681, 22.613097], [120.345684, 22.613175], [120.345698, 22.61362], [120.345707, 22.613865], [120.34571, 22.613938], [120.345712, 22.613997], [120.345727, 22.614366], [120.345738, 22.614756], [120.345738, 22.615]]}, {"key": "鳳翔", "seq": 8, "lat": 22.5874877, "lon": 120.3449888, "color": "#ea580c", "name": "高雄市私立鳳翔社區（小規模多機能）長照機構", "type": "失能、失智 ‧ 小規模多機能（含夜間4床）", "addr": "鳳山區南成里家和八街30號1樓", "tel": "(07)796-6130", "boss": "鄭仔辰", "cap": "59人（夜間4）", "est": "110.04.06", "eval": "合格", "min": "13分鐘", "dist": 3.6, "dur": 8, "geom": [[120.333895, 22.611285], [120.332998, 22.611223], [120.332943, 22.611215], [120.332849, 22.611183], [120.332889, 22.610835], [120.332973, 22.610098], [120.332981, 22.610029], [120.33299, 22.609957], [120.333104, 22.609054], [120.333187, 22.608105], [120.333284, 22.607201], [120.33329, 22.607158], [120.333488, 22.605641], [120.333605, 22.605652], [120.333968, 22.60568], [120.334073, 22.605687], [120.334272, 22.605699], [120.334372, 22.605706], [120.334609, 22.605724], [120.335294, 22.605778], [120.33593, 22.605825], [120.335957, 22.605305], [120.336321, 22.604881], [120.336563, 22.604587], [120.336589, 22.604556], [120.336653, 22.604477], [120.336746, 22.604361], [120.336781, 22.604318], [120.336827, 22.60426], [120.337091, 22.603929], [120.337418, 22.60352], [120.337768, 22.603081], [120.3381, 22.602666], [120.338151, 22.602602], [120.338434, 22.60225], [120.338855, 22.601724], [120.339088, 22.601435], [120.339617, 22.600776], [120.33989, 22.600421], [120.340072, 22.600185], [120.340265, 22.599934], [120.3403, 22.599889], [120.34033, 22.599852], [120.340402, 22.599759], [120.340823, 22.599212], [120.340952, 22.599038], [120.341358, 22.598259], [120.341658, 22.597872], [120.342359, 22.596965], [120.342737, 22.596476], [120.343013, 22.596125], [120.343237, 22.595832], [120.343611, 22.595343], [120.343911, 22.594953], [120.344148, 22.594646], [120.3442, 22.594582], [120.345143, 22.593416], [120.345166, 22.593392], [120.345224, 22.593331], [120.345333, 22.593216], [120.345396, 22.593149], [120.345751, 22.592772], [120.346207, 22.592361], [120.346455, 22.592175], [120.346807, 22.59198], [120.346804, 22.591916], [120.34677, 22.590461], [120.34673, 22.58943], [120.346725, 22.589311], [120.346722, 22.589207], [120.346709, 22.588765], [120.346694, 22.588378], [120.346691, 22.588305], [120.346688, 22.58822], [120.346675, 22.587834], [120.346668, 22.587576], [120.346666, 22.587516], [120.346663, 22.587429], [120.346591, 22.587432], [120.346044, 22.587458], [120.344989, 22.587488]]}]};
+const home = DATA.home, inst = DATA.inst;
+
+const map = L.map('map',{scrollWheelZoom:true});
+// 國土測繪中心 電子地圖（全中文台灣圖資）
+const nlsc = L.tileLayer('https://wmts.nlsc.gov.tw/wmts/EMAP/default/GoogleMapsCompatible/{z}/{y}/{x}',
+  {maxZoom:19, attribution:'圖資：內政部國土測繪中心'}).addTo(map);
+// 備援底圖：OpenStreetMap
+const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {maxZoom:19, attribution:'© OpenStreetMap'});
+L.control.layers({'電子地圖（中文）':nlsc,'OpenStreetMap':osm},null,{position:'topright',collapsed:false}).addTo(map);
+
+// home marker
+const homeIcon = L.divIcon({className:'',html:'<div style="background:#111827;color:#fff;border:2px solid #fff;border-radius:50%;width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:15px;box-shadow:0 2px 6px rgba(0,0,0,.4)">🏠</div>',iconSize:[30,30],iconAnchor:[15,15]});
+L.marker([home.lat,home.lon],{icon:homeIcon}).addTo(map)
+ .bindPopup('<b>家</b><br>'+home.addr);
+
+const bounds = [[home.lat,home.lon]];
+const legend = document.getElementById('legend');
+const tbody = document.getElementById('tbody');
+
+inst.forEach((it,idx)=>{
+  // route polyline (geom is [lon,lat])
+  const latlngs = it.geom.map(c=>[c[1],c[0]]);
+  L.polyline(latlngs,{color:it.color,weight:5,opacity:.75}).addTo(map);
+
+  // midpoint distance label
+  const mid = latlngs[Math.floor(latlngs.length/2)];
+  L.marker(mid,{opacity:0})
+   .bindTooltip(it.dist+' 公里 ‧ '+it.dur+' 分鐘',{permanent:true,direction:'top',className:'lbl'}).addTo(map);
+
+  // institution marker (numbered)
+  const ic = L.divIcon({className:'',html:'<div class="pin" style="background:'+it.color+'">'+(idx+1)+'</div>',iconSize:[24,24],iconAnchor:[12,12]});
+  L.marker([it.lat,it.lon],{icon:ic}).addTo(map)
+   .bindPopup('<b>'+it.name+'</b><br>'+it.addr+'<br>電話：'+it.tel+'<br>行車：'+it.dist+' 公里 ‧ 約 '+it.dur+' 分鐘（手寫 '+it.min+'）');
+  bounds.push([it.lat,it.lon]);
+
+  // legend chip
+  legend.insertAdjacentHTML('beforeend',
+    '<span class="chip"><span class="pin" style="background:'+it.color+';width:20px;height:20px;font-size:12px">'+(idx+1)+'</span>'+it.key+'　'+it.dist+' 公里</span>');
+
+  // table row
+  const evalCls = it.eval==='合格'?'ok':'bad';
+  const gm = 'https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(home.addr)+'&destination='+encodeURIComponent('高雄市'+it.addr);
+  tbody.insertAdjacentHTML('beforeend',
+   '<tr>'+
+   '<td class="name"><span class="num" style="background:'+it.color+'">'+(idx+1)+'</span>'+it.name+'</td>'+
+   '<td>'+it.type+'</td>'+
+   '<td>'+it.addr+'</td>'+
+   '<td>'+it.tel+'</td>'+
+   '<td>'+it.boss+'</td>'+
+   '<td>'+it.cap+'</td>'+
+   '<td>'+it.est+'</td>'+
+   '<td><span class="badge '+evalCls+'">'+it.eval+'</span></td>'+
+   '<td class="dist">'+it.dist+' 公里<br>約 '+it.dur+' 分鐘<br><span class="small">手寫 '+it.min+'</span></td>'+
+   '<td><a class="gm" href="'+gm+'" target="_blank">Google 導航 ↗</a></td>'+
+   '</tr>');
+});
+
+map.fitBounds(bounds,{padding:[40,40]});
+</script>
+</body>
+</html>
