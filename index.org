@@ -1,31 +1,47 @@
 #+TITLE: Letranger.github.io
+#+AUTHOR: 顏永進
 #+AUTHO: Yung Chin, Yeng
 #+EMAIL: yen.yungchin@gmail.com
 #+OPTIONS: toc:0 ^:nil num:nil
 #+PROPERTY: header-args :eval never-export
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="muse.css" />
+
 #+begin_export html
 <a href="https://hits.sh/letranger.github.io/index.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/index.html.svg"/></a>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+ data-cf-beacon='{\"token\": \"9a2c4a30114b4b29a64e2b1b61e55693\"}'></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4EJ3V5BG0Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4EJ3V5BG0Z', {
+    cookie_domain: 'none'
+  });
+</script>
+
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "19668562332a4a18914824d1dca86d07"}'></script><!-- End Cloudflare Web Analytics -->
 #+end_export
 
 * AI
 - [[https://letranger.github.io/AI/][AI Notes: from Zero to Error]]
-- [[https://letranger.github.io/AI-course/index.html][AI for TNFSH: 從入門到入土]]
 
 * Python notes
 - [[https://letranger.github.io/PythonCourse/PythonBasic.html][Python基本教材]]
-- [[file:PythonAdvanced.org][Python進階教材]]
-- [[file:Numpy.org][Numpy]]
-- [[file:Matplotlib.org][Matplotlib]]
-- [[file:Pandas.org][Pandas]]
-- [[file:Crawler.org][Crawler: 網路資料解析與爬蟲]]
-- [[file:gui.org][GUI:Python的人機界面]]
+- [[https://letranger.github.io/PythonCourse/PythonAdvanced.html][Python進階教材]]
+- [[https://letranger.github.io/PythonCourse/Numpy.html][Numpy]]
+- [[https://letranger.github.io/PythonCourse/Matplotlib.html][Matplotlib]]
+- [[https://letranger.github.io/PythonCourse/Pandas.html][Pandas]]
+- [[https://letranger.github.io/PythonCourse/Crawler.html][Crawler: 網路資料解析與爬蟲]]
+- [[https://letranger.github.io/PythonCourse/gui.html][GUI:Python的人機界面]]
 
 * CPP
-- [[https://letranger.github.io/CPP/BasicCPP.html][C++ for TNFSH]]
+- [[https://letranger.github.io/CPP/BasicC++.html][C++ for TNFSH]]
 - [[https://letranger.github.io/CPP/AdvanceC++.html][Advanced C++ Programming]]
 
-* GitHub notes
+* GitHub notes :noexport:
 - [[https://medium.com/%E9%80%B2%E6%93%8A%E7%9A%84-git-git-git/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B-%E7%94%A8github-pages-%E4%B8%8A%E5%82%B3%E9%9D%9C%E6%85%8B%E7%B6%B2%E7%AB%99-fa2ae83e6276][從零開始: 用github pages 上傳靜態網站]]
 
 * Emacs notes
@@ -37,7 +53,83 @@
 - [[https://letranger.github.io/SWIFT/SwiftUI.html][SWiftUI]]
 - [[https://letranger.github.io/SWIFT/MVVM.html][MVVM]]
 
-* Publication, Speech
+* Publication
+- [[https://orcid.org/my-orcid?orcid=0000-0001-8706-475X][ORCiD]]
 - [[https://scholar.google.com/citations?user=K8yP4_IAAAAJ&hl=en][Google Scholar]]
 - [[https://www.youtube.com/user/xletranger/videos][YouTube Videos]]
 - [[https://letranger.github.io/working/][研習、工作坊]]
+- [[https://market.cloud.edu.tw/list/ai.jsp][和AI做朋友]]
+- [[https://tkdbook.jyic.net/PC14110][台科大圖書：資訊科技]]
+
+* 參與計畫  :noexport:
+** 2025
+- 教育部國高中生成式AI補充教學資源發展計畫 / 協同主持人
+** 2024
+- 雲林縣111年度科技教育創意實作競賽 / 資科評審
+- 高中深度學習數位教材發展計畫 / 協同主持人
+- 新興科技教育遠距示範服務計畫 / 授課教師
+- 國高中生成式AI補充教學資源發展計畫 / 協同主持人
+** 2023
+- 新興科技教育遠距示範服務計畫 / 授課教師
+** 2022
+- 111年人工智慧教育高中生營隊
+- Intel® AI For Youth (Express)
+- 美商英特爾公司(Intel) AI4Y Program導入高中AI教育試辦計畫會議
+** 2022
+- 人工智慧高中推廣教育之示範例發展計畫 / 協同主持人
+** 2021
+- 運用人工智慧方法發展韌性城市管理規劃服務
+- 國立中央大學 吳祚任教授
+** 2020
+- 109年教育部補助中小學校人工智慧教育計畫 / 評審
+** 2018
+- 教育部中小學數位學習深耕計畫
+- 計畫執行單位：國立成功大學創新數位內容研究中心/計畫主持人：楊雅婷教授)
+- 數位學習主題跨域課程之檢核與成效分析 (子計畫四)/計畫主持人邱瓊慧教授
+- 教育部「中小學數位學習深耕計畫 」2017~ 2019子計畫四顧問
+- 計畫核心諮詢顧問人員顏永進教師
+** 2016
+- 國科會計畫(105-2630-S-025-001)
+- 國立臺中科技大學賴錦緣
+- 科技部補助專題:培養大專女學生網頁程式設計能力
+- 探討不同程式語言之選擇對於不同類型學生所產生之教學成效
+
+* 近五年內曾講授過之課程  :noexport:
+1.	資訊科技概論
+2.	C語言程式設計
+3.	Python程式設計
+4.	AI入門及實作
+5.	iOS程式設計
+
+* 指導學生  :noexport:
+- 2026國際科展 三等奬
+- 2025國際科展 工程學/為視障者開發之學習輔助平台：結合Image-to-3D  AI模型之可觸式三維擴增實境顯示器與個人化之檢索增強生成（RAG）自然文字系統 三等奬
+- 第22旺宏科學獎 資訊 佳作(郭育愷)
+- 第64屆全國科展 電腦與資訊學科 佳作
+- 第63屆第五分區科展 電腦與資訊學科 特優
+- 第62屆第五分區科展 電腦與資訊學科 佳作
+- 第61屆全國科展 電腦與資訊學科 第三名
+- 第61屆第五分區科展 電腦與資訊學科 特優、佳作
+- 第60屆第五分區科展 電腦與資訊學科 特優、優等
+- 第59屆第五分區科展 電腦與資訊學科 佳作
+- 99學年度數理、資訊能力競賽全國決賽二等奬
+- 98學年度數理、資訊能力競賽全國決賽三等奬
+- 97學年度數理、資訊能力競賽全國決賽一、二、三等奬
+- 96學年度數理、資訊能力競賽全國決賽一、二等奬
+
+* 經歷  :noexport:
+- 國小教師12年
+- 高中資訊科技教師13年
+- 台南一中資訊組長
+- 指導學生參加國際資訊奧林匹亞、機器人、程式設計、資訊能力等多項國際或全國競賽獲獎
+- 專長: 資訊教育、電腦化測驗、程式設計
+
+* 主要學歷 :noexport:
+|----------------------------+------+-------------|
+| 畢業學校    科系           | 學位 | 起 迄 年 月 |
+|----------------------------+------+-------------|
+| 台灣師範大學資訊教育研究所 | 博士 | 2003~2010   |
+| 台灣師範大學資訊教育研究所 | 碩士 | 1999~2002   |
+| 台南師範大學語文教育       | 學士 | 1999~2002   |
+|----------------------------+------+-------------|
+

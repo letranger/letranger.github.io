@@ -1,8 +1,12 @@
 #+TITLE: Learning Resource for James
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+#+AUTHOR: 顏永進
 #+STARTUP: showeverything
 #+PROPERTY: header-args :eval never-export
 #+OPTIONS: toc:nil num:nil
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/JamesLearningResources.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/JamesLearningResources.html.svg"/></a>
+#+end_export
+
 
 * Machine Learning Resource
 ** 台大李宏毅

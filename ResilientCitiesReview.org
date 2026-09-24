@@ -1,6 +1,6 @@
 #+TITLE: 運用人工智慧方法發展韌性城市管理規劃服務
 #+SUBTITLE: @@latex:\\\\\\\\@@期中報告-韌性城市個案例分析報告@@latex:\\\\\\\\@@
-#+AUTHOR: 國立台南第一高級中學-顏永進博士@@latex:\\@@國立中央大學水海所-吳祚任教授@@latex:\\@@國立中央大學太遙中心-劉說安教授@@latex:\\@@國立中央大學大氣所-王世宇教授@@latex:\\@@國立雲林科技大學巨量研究中心-黃志堅研究員@@latex:\\@@中原大學環工所-王玉純教授@@latex:\\@@資拓宏宇天氣人工智慧小組-蔡政達博士@@latex:\newpage@@
+#+AUTHOR: 顏永進
 #+latex:\newpage
 #+OPTIONS: num:5
 #+OPTIONS: date:nil
@@ -9,6 +9,10 @@
 #+INCLUDE: ../pdf.org
 
 #+latex:\newpage
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/ResilientCitiesReview.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/ResilientCitiesReview.html.svg"/></a>
+#+end_export
+
 * 規劃進度與說明
 本計畫欲完成之目標如下表[[table1]]：
 #+CAPTION: 委託人工智慧發展韌性城市管理規劃預期目標一覽表

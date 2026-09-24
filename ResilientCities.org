@@ -1,6 +1,11 @@
 #+TITLE: Resilient Cities
+#+AUTHOR: 顏永進
 #+OPTIONS: num:3
 #+include: ../web.org
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/ResilientCities.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/ResilientCities.html.svg"/></a>
+#+end_export
+
 
 * 專案內容
 ** 目標
@@ -17,6 +22,9 @@
 1. 探索相關劇烈天氣及氣候變遷相關數值模式。
 1. 邀請國內外專家針對劇烈天氣與韌性城市之各種數值模式進行會議討論。
 **** 分析運用人工智慧於韌性城市的可能性
+:PROPERTIES:
+:ID:       d9e70665-518a-419b-aabe-7434a3a03fe9
+:END:
 1. 結合相關案例，大數據及各種數值模式，訂定人工智慧應用於建立韌性城市的各項步驟及指標。
 1. 估計可能的軟硬體費用及時程安排，產出報告以利建立本市為智慧韌性城市。政府文件典藏規範與典藏格式之比較分析。
 *** 人工智慧發展韌性城市管理規劃方法及要求

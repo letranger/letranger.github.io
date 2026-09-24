@@ -1,11 +1,15 @@
 #+TITLE: James 轉學考分析
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+#+AUTHOR: 顏永進
+
 #+STARTUP: showeverything
 #+PROPERTY: header-args :eval never-export
 #+OPTIONS: toc:nil num:nil
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/JamesFeature.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/JamesFeature.html.svg"/></a>
+#+end_export
+
 
 * 資工系大學列表
-
 |--------------------------+-------+----------+----------+---------------+----------------+----------+-------------------|
 | 學校                     | 公/私 | 名額(二) | 名額(三) | 報名 Deadline | 考試日期       | 網路排名 |        食物鏈指數 |
 |--------------------------+-------+----------+----------+---------------+----------------+----------+-------------------|
