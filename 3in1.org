@@ -7,6 +7,10 @@
 #+OPTIONS: \n:t
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 #+INCLUDE: ../pdf.org
+#+begin_export html
+<a href="https://hits.sh/letranger.github.io/3in1.html/"><img align="right" alt="Hits" src="https://hits.sh/letranger.github.io/3in1.html.svg"/></a>
+#+end_export
+
 
 * 緒論
 
