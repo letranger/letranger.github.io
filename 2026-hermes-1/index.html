@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-10-12 一 13:00 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>龍蝦養殖實務：課前安裝說明</title>
+<meta name="author" content="Yung Chin" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="css/muse.css" />
+<script src="css/copy_code.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">龍蝦養殖實務：課前安裝說明
+<br />
+<span class="subtitle">中小學 AI 教育探索者南區社群 第 4 次共學｜10/31（六）10:00–11:00｜台南一中綜合大樓 403 室</span>
+</h1>
+<div id="outline-container-org0ee2b29" class="outline-2">
+<h2 id="org0ee2b29">給參加的老師</h2>
+<div class="outline-text-2" id="text-org0ee2b29">
+<p>
+研習只有一小時，想把時間都留給實際操作，所以請在 <b>10/28（三）以前</b> 照著安裝影片和這份說明，把 Hermes 裝好。
+這次研習用 Hermes 來「養龍蝦」：它和最近很紅的龍蝦（OpenClaw）是同一類的 AI Agent，但安裝簡單得多，今天學的東西兩邊都通用。
+</p>
+
+<ul class="org-ul">
+<li>安裝影片：【影片連結】</li>
+<li>整個過程大約 15–20 分鐘，要連網路。</li>
+<li>做完請填回報表單：【表單連結】。裝不起來也請回報，當天 9:45 會在教室幫忙處理。</li>
+</ul>
+</div>
+<div id="outline-container-org68d5ce9" class="outline-3">
+<h3 id="org68d5ce9">你需要準備</h3>
+<div class="outline-text-3" id="text-org68d5ce9">
+<ul class="org-ul">
+<li>一台筆電，研習當天帶來
+<ul class="org-ul">
+<li>Mac：要是 Apple 晶片（M1 以後）。Intel 晶片的 Mac 不能裝。
+不確定的話，點左上角的蘋果圖示 →「關於這台 Mac」，「晶片」那一欄寫 Apple M 開頭就可以。</li>
+<li>Windows：Windows 10 或 11</li>
+</ul></li>
+<li>一個 ChatGPT 帳號，用來幫 Hermes 接上模型</li>
+<li>一支裝好 Telegram 並且已經登入的手機</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org7180b41" class="outline-2">
+<h2 id="org7180b41">一、打開 ChatGPT 的 device code 授權</h2>
+<div class="outline-text-2" id="text-org7180b41">
+<p>
+Hermes 登入 ChatGPT 的方式要用到這個設定，它預設是關閉的，請先把它打開：
+</p>
+<ol class="org-ol">
+<li>用瀏覽器打開 <a href="https://chatgpt.com">https://chatgpt.com</a> ，登入你的帳號。</li>
+<li>點左下角的頭像，選 <code>設定/Settings</code> 。</li>
+<li>進入 <code>安全性與登入/Security and login</code> 頁面。</li>
+<li>找到 <code>應用程式安全性/App security</code> 授權的開關，把它打開。開關的名稱可能是英文，例如 <code>啟用 Codex、Excel、PowerPoint 和 Word 的裝置代碼登入/Enable device code sign-in for Codex, Excel, PowerPoint, and Word</code> ，以畫面上的文字為準。</li>
+</ol>
+
+<div id="org472720c" class="figure">
+<p><img src="一、打開_ChatGPT_的_device_code_授權/2026-10-09_14-52-25.png" alt="2026-10-09_14-52-25.png" width="600" />
+</p>
+<p><span class="figure-number">Figure 1: </span>打開 ChatGPT 的 device code 授權</p>
+</div>
+
+<p>
+如果你的 ChatGPT 是學校或單位統一開的工作區帳號，這個開關可能是灰色的或看不到，要請管理員打開，或改用個人帳號。
+</p>
+</div>
+</div>
+<div id="outline-container-org9d94a06" class="outline-2">
+<h2 id="org9d94a06">二、安裝 Hermes</h2>
+<div class="outline-text-2" id="text-org9d94a06">
+<ol class="org-ol">
+<li>到官方網站 <a href="https://hermes-agent.nousresearch.com/">https://hermes-agent.nousresearch.com/</a> 下載安裝檔。
+<ul class="org-ul">
+<li>Mac 下載的是 Hermes-Setup.dmg：打開之後，執行裡面的 Hermes 安裝程式。</li>
+<li>Windows 下載的是 Hermes-Setup.exe：直接執行。</li>
+</ul></li>
+<li>安裝程式會自動上網下載需要的元件，大約幾分鐘，等它跑完就好，不用另外安裝其他東西。</li>
+</ol>
+
+<div id="org145fc64" class="figure">
+<p><img src="三、登入_ChatGPT/2026-10-09_14-55-12.png" alt="2026-10-09_14-55-12.png" width="500" />
+</p>
+<p><span class="figure-number">Figure 2: </span>安裝 Hermes</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgafc4044" class="outline-2">
+<h2 id="orgafc4044">三、登入 ChatGPT</h2>
+<div class="outline-text-2" id="text-orgafc4044">
+<ol class="org-ol">
+<li>第一次打開 Hermes 時，畫面會列出可以用的模型提供方，選 <code>ChatGPT or Codex Subscription</code> 。</li>
+<li>畫面上會出現一組驗證碼，照著指示到瀏覽器登入 ChatGPT、輸入驗證碼。</li>
+<li>回到 Hermes，看到對話框就完成了。</li>
+</ol>
+</div>
+<div id="outline-container-orgbd74b1c" class="outline-3">
+<h3 id="orgbd74b1c">如果登入沒有成功</h3>
+<div class="outline-text-3" id="text-orgbd74b1c">
+<p>
+先確認第一步的 device code 授權開關有打開。還是不行的話，打開終端機（Mac 叫「終端機」，Windows 用 PowerShell），輸入：
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">hermes model
+</pre>
+</div>
+<p>
+在清單裡選 ChatGPT or Codex Subscription，畫面上會出現一個網址和一組驗證碼，用瀏覽器打開網址、登入 ChatGPT、輸入驗證碼。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3d3ec83" class="outline-2">
+<h2 id="org3d3ec83">四、檢查兩個設定</h2>
+<div class="outline-text-2" id="text-org3d3ec83">
+<p>
+打開 Hermes 的「設定」：
+</p>
+<ul class="org-ul">
+<li>安全性（Safety）：維持預設值， <b>不要改</b> 。這是讓它在做有風險的事之前先問你。</li>
+<li>進階（Advanced）：打開「保持電腦喚醒（Keep computer awake）」。電腦睡著時 Hermes 會停下來，打開這個選項，它工作到一半時電腦就不會睡著。</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org173a736" class="outline-2">
+<h2 id="org173a736">五、下載研習素材</h2>
+<div class="outline-text-2" id="text-org173a736">
+<ol class="org-ol">
+<li><p>
+在你的桌面裡建立一個「研習」資料夾。
+</p>
+<ul class="org-ul">
+<li>Mac：回到桌面，在空白的地方按右鍵（觸控板用兩指點按），選「新增檔案夾」，名稱改成「研習」。</li>
+<li>Windows：回到桌面，在空白的地方按右鍵，選「新增」→「資料夾」，名稱改成「研習」。</li>
+</ul>
+<p>
+資料夾名稱就是「研習」兩個字，前後不要有空白，也不要放進桌面上的其他資料夾裡。
+</p></li>
+<li>下載四個素材檔，放進這個資料夾（在連結上按右鍵，選「另存連結為」）：
+<ul class="org-ul">
+<li><a href="https://letranger.github.io/2026-hermes-1/%E6%AE%B5%E8%80%83%E6%88%90%E7%B8%BE.csv">段考成績.csv</a></li>
+<li><a href="https://letranger.github.io/2026-hermes-1/%E6%95%99%E5%AD%B8%E7%A0%94%E7%A9%B6%E6%9C%83%E9%80%90%E5%AD%97%E7%A8%BF.txt">教學研究會逐字稿.txt</a></li>
+<li><a href="https://letranger.github.io/2026-hermes-1/%E6%A0%A1%E5%A4%96%E6%95%99%E5%AD%B8%E8%B3%87%E8%A8%8A.md">校外教學資訊.md</a></li>
+<li><a href="https://letranger.github.io/2026-hermes-1/SOUL%E7%AF%84%E6%9C%AC.md">SOUL範本.md</a></li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge651b54" class="outline-2">
+<h2 id="orge651b54">六、確認裝好了</h2>
+<div class="outline-text-2" id="text-orge651b54">
+<p>
+在 Hermes 的對話框輸入：
+</p>
+<div class="org-src-container">
+<pre class="src src-prompt">請列出桌面上「研習」資料夾裡的所有檔案。
+</pre>
+</div>
+<p>
+它列出上面四個檔案，就代表安裝、登入、素材都準備好了。
+</p>
+
+<p>
+最後填回報表單：【表單連結】
+</p>
+</div>
+</div>
+<div id="outline-container-org85cc550" class="outline-2">
+<h2 id="org85cc550">常見問題</h2>
+<div class="outline-text-2" id="text-org85cc550">
+<dl class="org-dl">
+<dt>我的 Mac 是 Intel 晶片</dt><dd>Hermes 不支援。請改帶 Windows 筆電，或在回報表單裡說明，當天看投影跟著操作。</dd>
+<dt>找不到 device code 授權的開關</dt><dd>如果是學校或單位的工作區帳號，請改用個人帳號。個人帳號也找不到的話，在表單裡回報並附上截圖。</dd>
+<dt>學校的電腦不能裝軟體</dt><dd>請改用自己的筆電，或在表單裡說明，當天看投影跟著操作。</dd>
+<dt>它說找不到「研習」資料夾</dt><dd>確認「研習」資料夾是直接放在桌面上，不是在「文件」或桌面上的其他資料夾裡。
+Windows 電腦如果有開 OneDrive 備份，桌面其實在 OneDrive 裡面，可以跟它說「研習資料夾在 OneDrive 的桌面上」。</dd>
+<dt>一定要付費的 ChatGPT 嗎？</dt><dd>【待確認後補上】</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Yung Chin</p>
+<p class="date">Created: 2026-10-12 一 13:00</p>
+</div>
+</body>
+</html>
